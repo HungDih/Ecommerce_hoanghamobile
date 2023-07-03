@@ -1,0 +1,122 @@
+//Hello everyone
+
+.top-nav {
+  margin-top: 40px;
+  background-color: #00483d;
+  font-size: 13px;
+  height: 30px;
+
+  .top-link {
+    color: #fff;
+    padding: 5px 0px 5px 15px;
+    &:hover {
+      color: #7fd6cb;
+    }
+  }
+}
+
+.heading {
+  padding: 21px 0;
+  display: flex;
+
+  .top-logo {
+    padding-right: 10px;
+  }
+
+  .top-input-search {
+    background: #fff;
+    border-radius: 15px;
+    padding: 5px 10px;
+    box-shadow: 0 4px 6px #ccc;
+    display: flex;
+    position: relative;
+    height: 40px;
+    flex-basis: 100%;
+    
+    input {
+      border: none;
+      outline: none;
+      padding: 7px 0;
+      width: 100%;
+      font-weight: bold;
+    }
+
+    button {
+      box-shadow: 0 4px 6px #ccc;
+      position: absolute;
+      right: 4px;
+      top: -5px;
+      background: #00483d;
+      background-image: linear-gradient(#00917a, #00483d);
+      border: none;
+      border-radius: 17px;
+      width: 42px;
+      height: 42px;
+      outline: none;
+      font-size: 17px;
+      color: #fff;
+    }
+  }
+
+  .top-order {
+    display: flex;
+    vertical-align: top;
+    padding-left: 25px;
+
+    .item-check-order {
+      a {
+        width: 130px;
+        display: flex;
+        background: #00483e;
+        border-radius: 10px;
+        padding: 10px 12px;
+        box-shadow: 0 4px 6px #ccc;
+        color: #fff;
+        border: none;
+        font-size: 12px;
+        position: relative;
+        text-decoration: none;
+
+        .icon i {
+          font-size: 24px;
+          position: absolute;
+          margin-top: 5px;
+        }
+
+        .text {
+          margin-left: 54px;
+        }
+
+        &:hover {
+          background: #009981;
+        }
+      }
+    }
+  }
+
+  .item-cart {
+    margin-left: 25px;
+    display: flex;
+    font-size: 38px;
+    a {
+      i {
+        color: #00483e;
+      }
+      label {
+        background-color: #ff6801;
+        width: 25px;
+        height: 25px;
+        border-radius: 4px;
+        margin-left: 8px;
+        position: relative;
+
+        span {
+          font-size: 16px;
+          color: #fff;
+          position: absolute;
+          padding-left: 8px;
+        }
+      }
+    }
+  }
+}
