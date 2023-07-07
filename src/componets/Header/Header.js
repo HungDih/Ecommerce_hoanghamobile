@@ -1,7 +1,5 @@
 import "./Header.scss";
 import { Nav } from "react-bootstrap";
-import MyContext from "../MyContext";
-import Mobile from "../pages/Mobile";
 
 function Header() {
   const topNav = [
@@ -60,67 +58,67 @@ function Header() {
             {
               name: "Apple",
               path: "/dien-thoai/Apple",
-              cdn: "https://cdn.hoanghamobile.com/i/cat/Uploads/2022/09/07/logoooooooooooooooo.png",
+              logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2022/09/07/logoooooooooooooooo.png",
             },
             {
               name: "Samsung",
               path: "/dien-thoai/Samsung",
-              cdn: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/11/30/samsung-logo-transparent.png",
+              logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/11/30/samsung-logo-transparent.png",
             },
             {
               name: "Xiaomi",
               path: "/dien-thoai/Xiaomi",
-              cdn: "https://cdn.hoanghamobile.com/i/cat/Uploads/2021/05/27/xiaomi-global-logo-rgb-logo-moi.png",
+              logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2021/05/27/xiaomi-global-logo-rgb-logo-moi.png",
             },
             {
               name: "OPPO",
               path: "/dien-thoai/OPPO",
-              cdn: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(3).png",
+              logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(3).png",
             },
             {
               name: "TECNO",
               path: "/dien-thoai/TECNO",
-              cdn: "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/06/02/tecno.png",
+              logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/06/02/tecno.png",
             },
             {
               name: "Nokia",
               path: "/dien-thoai/Nokia",
-              cdn: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(4).png",
+              logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(4).png",
             },
             {
               name: "Realme",
               path: "/dien-thoai/Realme",
-              cdn: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(6).png",
+              logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(6).png",
             },
             {
               name: "Vivo",
               path: "/dien-thoai/Vivo",
-              cdn: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/11/30/vivo-logo.png",
+              logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/11/30/vivo-logo.png",
             },
             {
               name: "Honor",
               path: "/dien-thoai/Honor",
-              cdn: "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/06/19/honor-logo-2022-svg.png",
+              logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/06/19/honor-logo-2022-svg.png",
             },
             {
               name: "Infinix",
               path: "/dien-thoai/Infinix",
-              cdn: "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/05/26/infinix-logo-svg.png",
+              logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/05/26/infinix-logo-svg.png",
             },
             {
               name: "ROG",
               path: "/dien-thoai/ROG",
-              cdn: "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/06/12/rog.png",
+              logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/06/12/rog.png",
             },
             {
               name: "XOR",
               path: "/dien-thoai/XOR",
-              cdn: "https://cdn.hoanghamobile.com/i/cat/Uploads/2021/12/24/xorr.png",
+              logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2021/12/24/xorr.png",
             },
             {
               name: "Masstel",
               path: "/dien-thoai/Masstel",
-              cdn: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/10/30/logo-masstel-4.png",
+              logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/10/30/logo-masstel-4.png",
             },
           ],
         },
@@ -523,7 +521,6 @@ function Header() {
   ];
 
   return (
-    <>
       <header>
         <div className="top-nav">
           <Nav
@@ -638,10 +635,6 @@ function Header() {
           </ul>
         </div>
       </header>
-      <MyContext.Provider value={products}>
-        <Mobile />
-      </MyContext.Provider>
-    </>
   );
 }
 
