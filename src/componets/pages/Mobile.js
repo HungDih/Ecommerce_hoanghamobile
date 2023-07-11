@@ -1,5 +1,5 @@
 import "../pages/Mobile.scss";
-// import Carousel from "react-bootstrap/Carousel";
+import React from "react";
 
 function Mobile() {
   const brand = [
@@ -70,6 +70,10 @@ function Mobile() {
     },
   ];
 
+  const filter = [{
+    
+  }]
+
   return (
     <div className="content">
       <div className="top-ads">
@@ -80,26 +84,41 @@ function Mobile() {
           <img
             src="https://cdn.hoanghamobile.com/i/home/Uploads/2023/07/04/1200x200_638240586236126285.jpg"
             className="img-ads"
+            alt="Top Ad"
           />
         </a>
-        <div className="nav-brand">
-          <div
-            className="lr-item active"
-            style="width: 131.25px; margin-right: 10px;"
-          >
-            <li>
-              <a className="" href="/dien-thoai-di-dong/vivo" title="Vivo">
-                <img src="https://cdn.hoanghamobile.com/i/cat/Uploads/2020/11/30/vivo-logo.png" />
-                <label>Vivo</label>
-              </a>
-            </li>
-          </div>
-        </div>
+      </div>
+      <div className="brand-carousel">
+        <button type="button" role="presentation" className="btn-directional">
+          <i class="fa-solid fa-caret-left"></i>
+        </button>
+        <ul className="list-carousel">
+          {brand.map((item, index) => {
+            return (
+              <li key={index}>
+                <a href={item.path} title={item.name}>
+                  <img src={item.logo} />
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+        <button type="button" role="presentation" className="btn-directional">
+          <span aria-label="Previous">
+            <i className="fa-solid fa-caret-right"></i>
+          </span>
+        </button>
       </div>
       <div className="products">
-        <div className="top-nav">
-          <div className="nav-breadcrums"></div>
-          <div className="nav-fillter"></div>
+        <div className="fillter-nav">
+          <div className="nav-breadcrums">
+
+          </div>
+          <div className="nav-fillter">
+<div className="title-filter">
+
+</div>
+          </div>
         </div>
         <div className="list-products"></div>
       </div>
