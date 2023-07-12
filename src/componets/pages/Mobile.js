@@ -70,9 +70,15 @@ function Mobile() {
     },
   ];
 
-  const filter = [{
-    
-  }]
+  const filter = [
+    "Danh mục",
+    "Thương hiệu",
+    "Giá",
+    "Bluetooth",
+    "Độ phân giải",
+    "RAM",
+    "Sắp xếp",
+  ];
 
   return (
     <div className="content">
@@ -110,14 +116,40 @@ function Mobile() {
         </button>
       </div>
       <div className="products">
-        <div className="fillter-nav">
-          <div className="nav-breadcrums">
+        <div className="nav-breadcrums">
+          <i class="fa-solid fa-house"></i>
+          <a href="/">
+            <strong>Trang chủ › </strong>
+          </a>
+          <a href="/dien-thoai">
+            <span>Điện thoại</span>
+          </a>
+          
+        </div>
 
-          </div>
-          <div className="nav-fillter">
-<div className="title-filter">
+        <div className="nav-fillter">
+          <div className="detail-filter">
+            <strong>Lọc danh sách: </strong>
+            {filter.map((item, index) => {
+              return (
+                <div className="header-fillter" key={index}>
+                  <label>
+                    <a href="javascript:;">
+                      {item}
+                      <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                  </label>
+                </div>
+              );
+            })}
 
-</div>
+            <div className="sub-filter">
+              <ul>
+                <li>
+                  <a href="/dien-thoai-di-dong/iphone">Apple</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className="list-products"></div>
