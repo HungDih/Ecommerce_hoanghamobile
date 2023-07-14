@@ -8,886 +8,17 @@ import Card from "react-bootstrap/Card";
 function Mobile() {
   const products = [
     {
-      id: 1,
-      title: "Nokia C21 Plus (2GB/64GB) - Chính hãng",
-      price: "2,890,000 ₫",
-      newPrice: "1,780,000 ₫",
-      changePrice: "",
-      brand: "Nokia",
-      sale: "Giảm 1,110,000₫",
-      saleDes: "VÀ 6 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2022/05/07/image-removebg-preview_637875529202208799.png",
-    },
-    {
-      id: 2,
       title: "Redmi Note 12S (8GB/256GB) - Chính hãng",
-      price: "6,690,000 ₫",
+      sticker: "https://hoanghamobile.com/Content/web/sticker/hot.png",
       newPrice: "6,190,000 ₫",
-      changePrice: "5,890,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images: [
+      price: "6,690,000 ₫",
+      upPrice: "5,890,000 ₫",
+      brand: "Xiaomi",
+      discount: "Giảm 500,000₫",
+      saleAdd: "VÀ 10 KM KHÁC",
+      images:
         "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12s.png",
-      ],
-    },
-    {
-      id: 3,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 4,
-      title: "Redmi Note 12 (4GB/128GB) - Chính hãng",
-      price: "4,990,000 ₫",
-      newPrice: "4,290,000 ₫",
-      changePrice: "3,990,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 9 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 5,
-      title: "Redmi Note 12 (8GB/128GB) - Chính hãng",
-      price: "",
-      newPrice: "5,790,000 ₫",
-      changePrice: "5,490,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 9 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 6,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 7,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 8,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 9,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 10,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 11,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 12,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 13,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 14,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 15,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 16,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 17,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 18,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 19,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 20,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 21,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 22,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 23,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 24,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 25,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 26,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 27,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 28,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 29,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 30,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 31,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 32,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 33,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 34,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 35,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 36,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 37,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 38,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 39,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 40,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 41,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 42,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 43,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 44,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 45,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 46,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 47,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 48,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 49,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 50,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 51,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 52,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 53,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 54,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 55,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 56,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 57,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 58,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 59,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 60,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 61,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 62,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 63,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 64,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 65,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 66,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 67,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 68,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 69,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 70,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 71,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 72,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 73,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 74,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 75,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 76,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 77,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 78,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 79,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
-    },
-    {
-      id: 80,
-      title: "Redmi Note 12 Pro (8GB/256GB) - Chính hãng",
-      price: "7,990,000 ₫",
-      newPrice: "7,490,000 ₫",
-      changePrice: "7,190,000 ₫",
-      brand: "Redmi",
-      saleDes: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12pro.png",
+      id: 2,
     },
   ];
 
@@ -959,47 +90,48 @@ function Mobile() {
     },
   ];
 
-  const [data, setData] = useState([]);
-  const [filter, setFilter] = useState(data);
-  const [loading, setLoading] = useState(false);
-  let componentMounted = true;
+  // const [data, setData] = useState([]);
+  // const [filter, setFilter] = useState(data);
+  // const [loading, setLoading] = useState(false);
+  // let componentMounted = true;
 
-  useEffect(() => {
-    const getProducts = async () => {
-      setLoading(true);
-      const respone = await fetch("https://dummyjson.com/products");
-      if (componentMounted) {
-        setData(await respone.clone().json());
-        setFilter(await respone.clone().json());
-        setLoading(false);
-        console.log(filter);
-      }
-      return () => {
-        componentMounted = false;
-      };
-    };
-    getProducts();
-  }, []);
-  const Loading = () => {
-    return <h1>Hello world....</h1>;
-  };
-  const ShowProducts = () => {
-    return (
-      <>
-        <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src="holder.js/100px180" />
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
-          </Card.Body>
-        </Card>
-      </>
-    );
-  };
+  // useEffect(() => {
+  //   const getProducts = async () => {
+  //     setLoading(true);
+  //     const respone = await fetch("https://dummyjson.com/products");
+  //     if (componentMounted) {
+  //       setData(await respone.clone().json());
+  //       setFilter(await respone.clone().json());
+  //       setLoading(false);
+  //       console.log(filter);
+  //     }
+  //     return () => {
+  //       componentMounted = false;
+  //     };
+  //   };
+  //   getProducts();
+  // }, []);
+  // const Loading = () => {
+  //   return <h1>Hello world....</h1>;
+  // };
+
+  // const ShowProducts = () => {
+  //   return (
+  //     <>
+  //       <Card style={{ width: "18rem" }}>
+  //         <Card.Img variant="top" src="holder.js/100px180" />
+  //         <Card.Body>
+  //           <Card.Title>Card Title</Card.Title>
+  //           <Card.Text>
+  //             Some quick example text to build on the card title and make up the
+  //             bulk of the card's content.
+  //           </Card.Text>
+  //           <Button variant="primary">Go somewhere</Button>
+  //         </Card.Body>
+  //       </Card>
+  //     </>
+  //   );
+  // };
 
   return (
     <div className="content">
@@ -1047,7 +179,39 @@ function Mobile() {
           </a>
         </div>
 
-        <div className="nav-fillter">
+        <div className="container">
+          <div className="col-container">
+            <h1>Hello</h1>
+          </div>
+          <div className="col-container">
+            <h1>Hello</h1>
+          </div>
+          <div className="col-container">
+            <h1>Hello</h1>
+          </div>
+          <div className="col-container">
+            <h1>Hello</h1>
+          </div>
+          <div className="col-container">
+            <h1>Hello</h1>
+          </div>
+          <div className="col-container">
+            <h1>Hello</h1>
+          </div>
+          <div className="col-container">
+            <h1>Hello</h1>
+          </div>
+          <div className="col-container">
+            <h1>Hello</h1>
+          </div>
+          <div className="col-container">
+            <h1>Hello</h1>
+          </div>
+          <div className="col-container">
+            <h1>Hello</h1>
+          </div>
+        </div>
+        {/* <div className="nav-fillter">
           <div className="detail-filter">
             <strong>Lọc danh sách: </strong>
             {filter.map((item, index) => {
@@ -1071,8 +235,82 @@ function Mobile() {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
+
         <div className="list-products"></div>
+        <h1>Điện thoại</h1>
+
+        <div className="item-product">
+          <div className="img-product">
+            <a
+              href="/dien-thoai-di-dong/apple-iphone-14-pro-max-128gb-chinh-hang-vn-a"
+              title="iPhone 14 Pro Max (128GB) - Chính hãng VN/A"
+            >
+              <img
+                src="https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/06/05/my-project.png"
+                alt="iPhone 14 Pro Max (128GB) - Chính hãng VN/A"
+                title="iPhone 14 Pro Max (128GB) - Chính hãng VN/A"
+              />
+            </a>
+          </div>
+
+          <div className="sticker-product sticker-left">
+            <span>
+              <img
+                src="/Content/web/sticker/apple.png"
+                title="Chính hãng Apple"
+              />
+            </span>
+          </div>
+
+          <div className="info-product">
+            <a
+              href="/dien-thoai-di-dong/apple-iphone-14-pro-max-128gb-chinh-hang-vn-a"
+              className="title"
+              title="iPhone 14 Pro Max (128GB) - Chính hãng VN/A"
+            >
+              iPhone 14 Pro Max (128GB) - Chính hãng VN/A
+            </a>
+            <span className="price">
+              <strong>25,990,000 ₫</strong>
+            </span>
+
+            <div className="upprice">
+              <label>
+                Giá lên đời từ:{" "}
+                <strong className="text-red">23,990,000 ₫</strong>
+              </label>
+            </div>
+          </div>
+
+          <div className="note-product">
+            <span className="bag">KM</span>{" "}
+            <label title="Giảm thêm tới 800.000đ khi mở thẻ tín dụng TPBank EVO.">
+              Giảm thêm tới 800.000đ khi mở thẻ t...
+            </label>
+            <strong className="text-orange">VÀ 10 KM KHÁC</strong>
+          </div>
+
+          <div className="promote-product">
+            <a href="/dien-thoai-di-dong/apple-iphone-14-pro-max-128gb-chinh-hang-vn-a">
+              <ul>
+                <li>
+                  <span className="bag">KM</span> Giảm thêm tới 800.000đ khi mở
+                  thẻ tín dụng TPBank EVO.
+                </li>
+                <li>
+                  <span className="bag">KM</span> GIẢM THÊM 200.000đ khi thanh
+                  toán qua VNPAY-QR.
+                </li>
+                <li>
+                  <span className="bag">KM</span> Trợ giá lên tới 1.000.000đ khi
+                  thu cũ đổi mới lên đời iPhone từ iPhone cũ (trừ mã VN/A) và
+                  các sản phẩm khác.
+                </li>
+              </ul>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
