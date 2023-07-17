@@ -1,26 +1,21 @@
 import "../pages/Mobile.scss";
-import React, { useEffect, useState } from "react";
-import { products } from "../Header/Header";
-import Header from "../Header/Header";
+import { useEffect, useState } from "react";
+import { fetchAllProducts } from "../service/productService";
 
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
 function Mobile() {
-  const products = [
-    {
-      title: "Redmi Note 12S (8GB/256GB) - Chính hãng",
-      sticker: "https://hoanghamobile.com/Content/web/sticker/hot.png",
-      newPrice: "6,190,000 ₫",
-      price: "6,690,000 ₫",
-      upPrice: "5,890,000 ₫",
-      brand: "Xiaomi",
-      discount: "Giảm 500,000₫",
-      saleAdd: "VÀ 10 KM KHÁC",
-      images:
-        "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/11/note12s.png",
-      id: 2,
-    },
-  ];
+  const [listProducts, setlistProducts] = useState([]);
+  useEffect(() => {
+    getProducts();
+  }, []);
+
+  const getProducts = async () => {
+    let respone = await fetchAllProducts();
+    if (respone && respone.data) {
+      setlistProducts(respone.data);
+    }
+  };
+
+  // console.log(listProducts);
 
   const brand = [
     {
@@ -90,49 +85,6 @@ function Mobile() {
     },
   ];
 
-  // const [data, setData] = useState([]);
-  // const [filter, setFilter] = useState(data);
-  // const [loading, setLoading] = useState(false);
-  // let componentMounted = true;
-
-  // useEffect(() => {
-  //   const getProducts = async () => {
-  //     setLoading(true);
-  //     const respone = await fetch("https://dummyjson.com/products");
-  //     if (componentMounted) {
-  //       setData(await respone.clone().json());
-  //       setFilter(await respone.clone().json());
-  //       setLoading(false);
-  //       console.log(filter);
-  //     }
-  //     return () => {
-  //       componentMounted = false;
-  //     };
-  //   };
-  //   getProducts();
-  // }, []);
-  // const Loading = () => {
-  //   return <h1>Hello world....</h1>;
-  // };
-
-  // const ShowProducts = () => {
-  //   return (
-  //     <>
-  //       <Card style={{ width: "18rem" }}>
-  //         <Card.Img variant="top" src="holder.js/100px180" />
-  //         <Card.Body>
-  //           <Card.Title>Card Title</Card.Title>
-  //           <Card.Text>
-  //             Some quick example text to build on the card title and make up the
-  //             bulk of the card's content.
-  //           </Card.Text>
-  //           <Button variant="primary">Go somewhere</Button>
-  //         </Card.Body>
-  //       </Card>
-  //     </>
-  //   );
-  // };
-
   return (
     <div className="content">
       <div className="top-ads">
@@ -179,38 +131,6 @@ function Mobile() {
           </a>
         </div>
 
-        <div className="container">
-          <div className="col-container">
-            <h1>Hello</h1>
-          </div>
-          <div className="col-container">
-            <h1>Hello</h1>
-          </div>
-          <div className="col-container">
-            <h1>Hello</h1>
-          </div>
-          <div className="col-container">
-            <h1>Hello</h1>
-          </div>
-          <div className="col-container">
-            <h1>Hello</h1>
-          </div>
-          <div className="col-container">
-            <h1>Hello</h1>
-          </div>
-          <div className="col-container">
-            <h1>Hello</h1>
-          </div>
-          <div className="col-container">
-            <h1>Hello</h1>
-          </div>
-          <div className="col-container">
-            <h1>Hello</h1>
-          </div>
-          <div className="col-container">
-            <h1>Hello</h1>
-          </div>
-        </div>
         {/* <div className="nav-fillter">
           <div className="detail-filter">
             <strong>Lọc danh sách: </strong>
@@ -237,78 +157,85 @@ function Mobile() {
           </div>
         </div> */}
 
-        <div className="list-products"></div>
-        <h1>Điện thoại</h1>
+        <div className="list-products ">
+          <span>Điện thoại</span>
+          <div className="content-products ">
+            {listProducts &&
+              listProducts.length > 0 &&
+              listProducts.map((item, index) => {
+                return (
+                  <div className="item-product" key={`item-${index}`}>
+                    <div className="img-product">
+                      <a href="/" title={item.title}>
+                        <img
+                          src={item.images}
+                          alt={item.title}
+                          title={item.title}
+                        />
+                      </a>
+                    </div>
 
-        <div className="item-product">
-          <div className="img-product">
-            <a
-              href="/dien-thoai-di-dong/apple-iphone-14-pro-max-128gb-chinh-hang-vn-a"
-              title="iPhone 14 Pro Max (128GB) - Chính hãng VN/A"
-            >
-              <img
-                src="https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/06/05/my-project.png"
-                alt="iPhone 14 Pro Max (128GB) - Chính hãng VN/A"
-                title="iPhone 14 Pro Max (128GB) - Chính hãng VN/A"
-              />
-            </a>
-          </div>
+                    <div className="sticker-product">
+                      <span>
+                        <img src={item.sticker} />
+                      </span>
+                    </div>
 
-          <div className="sticker-product sticker-left">
-            <span>
-              <img
-                src="/Content/web/sticker/apple.png"
-                title="Chính hãng Apple"
-              />
-            </span>
-          </div>
+                    {item.discount && (
+                      <span className="sales-product">
+                        <i className="fa-solid fa-bolt" />
+                        {item.discount}
+                      </span>
+                    )}
 
-          <div className="info-product">
-            <a
-              href="/dien-thoai-di-dong/apple-iphone-14-pro-max-128gb-chinh-hang-vn-a"
-              className="title"
-              title="iPhone 14 Pro Max (128GB) - Chính hãng VN/A"
-            >
-              iPhone 14 Pro Max (128GB) - Chính hãng VN/A
-            </a>
-            <span className="price">
-              <strong>25,990,000 ₫</strong>
-            </span>
+                    <div className="info-product">
+                      <a href="/" className="title" title={item.title}>
+                        {item.title}
+                      </a>
+                      <span className="price">
+                        <strong>{item.newPrice}</strong>
+                        <strike>{item.price}</strike>
+                      </span>
+                      <div className="upprice">
+                        {item.upPrice && (
+                          <label>
+                            Giá lên đời từ:
+                            <strong className="text-red">{item.upPrice}</strong>
+                          </label>
+                        )}
+                      </div>
+                    </div>
 
-            <div className="upprice">
-              <label>
-                Giá lên đời từ:{" "}
-                <strong className="text-red">23,990,000 ₫</strong>
-              </label>
-            </div>
-          </div>
+                    <div className="note-product">
+                      <span className="bag">KM</span>{" "}
+                      <label title="Giảm thêm tới 800.000đ khi mở thẻ tín dụng TPBank EVO.">
+                        Giảm thêm tới 800.000đ khi mở thẻ t...
+                      </label>
+                      <strong className="text-orange">{item.saleAdd}</strong>
+                    </div>
 
-          <div className="note-product">
-            <span className="bag">KM</span>{" "}
-            <label title="Giảm thêm tới 800.000đ khi mở thẻ tín dụng TPBank EVO.">
-              Giảm thêm tới 800.000đ khi mở thẻ t...
-            </label>
-            <strong className="text-orange">VÀ 10 KM KHÁC</strong>
-          </div>
-
-          <div className="promote-product">
-            <a href="/dien-thoai-di-dong/apple-iphone-14-pro-max-128gb-chinh-hang-vn-a">
-              <ul>
-                <li>
-                  <span className="bag">KM</span> Giảm thêm tới 800.000đ khi mở
-                  thẻ tín dụng TPBank EVO.
-                </li>
-                <li>
-                  <span className="bag">KM</span> GIẢM THÊM 200.000đ khi thanh
-                  toán qua VNPAY-QR.
-                </li>
-                <li>
-                  <span className="bag">KM</span> Trợ giá lên tới 1.000.000đ khi
-                  thu cũ đổi mới lên đời iPhone từ iPhone cũ (trừ mã VN/A) và
-                  các sản phẩm khác.
-                </li>
-              </ul>
-            </a>
+                    <div className="promote-product">
+                      <a href="/">
+                        <ul>
+                          <li>
+                            <span className="bag">KM</span> Giảm thêm tới
+                            800.000đ khi mở thẻ tín dụng TPBank EVO.
+                          </li>
+                          <li>
+                            <span className="bag">KM</span> GIẢM THÊM 200.000đ
+                            khi thanh toán qua VNPAY-QR.
+                          </li>
+                          <li>
+                            <span className="bag">KM</span> Trợ giá lên tới
+                            1.000.000đ khi thu cũ đổi mới lên đời iPhone từ
+                            iPhone cũ (trừ mã VN/A) và các sản phẩm khác.
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                );
+              })}
           </div>
         </div>
       </div>
