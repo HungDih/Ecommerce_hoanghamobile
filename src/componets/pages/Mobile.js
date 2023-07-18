@@ -4,6 +4,19 @@ import { fetchAllProducts } from "../service/productService";
 
 function Mobile() {
   const [listProducts, setlistProducts] = useState([]);
+  const [numOfProduct, setNumOfProduct] = useState(15);
+  const [isAllLoaded, setIsAllLoaded] = useState(false);
+
+  const productLoaded = listProducts.slice(0, numOfProduct);
+
+  const handleLoadMore = () => {
+    if (listProducts.length == productLoaded.length) {
+      setIsAllLoaded(true);
+    } else {
+      setNumOfProduct(numOfProduct + numOfProduct);
+    }
+  };
+
   useEffect(() => {
     getProducts();
   }, []);
@@ -15,7 +28,15 @@ function Mobile() {
     }
   };
 
-  // console.log(listProducts);
+  const filter = [
+    "Danh mục",
+    "Thương hiệu",
+    "Giá",
+    "Bluetooth",
+    "Độ phân giải",
+    "RAM",
+    "Sắp xếp",
+  ];
 
   const brand = [
     {
@@ -131,7 +152,7 @@ function Mobile() {
           </a>
         </div>
 
-        {/* <div className="nav-fillter">
+        <div className="nav-fillter">
           <div className="detail-filter">
             <strong>Lọc danh sách: </strong>
             {filter.map((item, index) => {
@@ -155,18 +176,18 @@ function Mobile() {
               </ul>
             </div>
           </div>
-        </div> */}
+        </div>
 
         <div className="list-products ">
           <span>Điện thoại</span>
           <div className="content-products ">
-            {listProducts &&
-              listProducts.length > 0 &&
-              listProducts.map((item, index) => {
+            {productLoaded &&
+              productLoaded.length > 0 &&
+              productLoaded.map((item, index) => {
                 return (
                   <div className="item-product" key={`item-${index}`}>
                     <div className="img-product">
-                      <a href="/" title={item.title}>
+                      <a href="/dien-thoai" title={item.title}>
                         <img
                           src={item.images}
                           alt={item.title}
@@ -189,7 +210,11 @@ function Mobile() {
                     )}
 
                     <div className="info-product">
-                      <a href="/" className="title" title={item.title}>
+                      <a
+                        href="/dien-thoai"
+                        className="title"
+                        title={item.title}
+                      >
                         {item.title}
                       </a>
                       <span className="price">
@@ -215,7 +240,7 @@ function Mobile() {
                     </div>
 
                     <div className="promote-product">
-                      <a href="/">
+                      <a href="/dien-thoai">
                         <ul>
                           <li>
                             <span className="bag">KM</span> Giảm thêm tới
@@ -238,6 +263,16 @@ function Mobile() {
               })}
           </div>
         </div>
+
+        {!isAllLoaded ? (
+          <div className="more-product">
+            <button onClick={handleLoadMore}>Xem thêm sản phẩm</button>
+          </div>
+        ) : (
+          <div className="more-product">
+            <button disabled>Không còn sản phẩm nào.!</button>
+          </div>
+        )}
       </div>
     </div>
   );
