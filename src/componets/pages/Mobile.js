@@ -1,6 +1,7 @@
 import "../pages/Mobile.scss";
 import { useEffect, useState } from "react";
 import { fetchAllProducts } from "../service/productService";
+import _ from "lodash";
 
 function Mobile() {
   const [listProducts, setlistProducts] = useState([]);
@@ -27,7 +28,6 @@ function Mobile() {
       setlistProducts(respone.data);
     }
   };
-
   const filter = [
     "Danh mục",
     "Thương hiệu",
@@ -37,6 +37,8 @@ function Mobile() {
     "RAM",
     "Sắp xếp",
   ];
+
+  console.log(filter.map((item, index) => item));
 
   const brand = [
     {
@@ -155,25 +157,23 @@ function Mobile() {
         <div className="nav-fillter">
           <div className="detail-filter">
             <strong>Lọc danh sách: </strong>
-            {filter.map((item, index) => {
-              return (
-                <div className="header-fillter" key={index}>
-                  <label>
-                    <a onClick={() => {}}>
-                      {item}
-                      <i className="fa-solid fa-angle-down"></i>
-                    </a>
-                  </label>
-                </div>
-              );
-            })}
+            <div className="header-fillter">
+              {filter.map((item, index) => {
+                return (
+                  <a key={`header-${index}`}>
+                    {item}
+                    <i className="fa-solid fa-angle-down" />
+                  </a>
+                );
+              })}
 
-            <div className="sub-filter">
-              <ul>
-                <li>
-                  <a href="/dien-thoai-di-dong/iphone">Apple</a>
-                </li>
-              </ul>
+              <div className="sub-filter">
+                <ul>
+                  <li>
+                    <a href="/dien-thoai-di-dong/iphone">Apple</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
