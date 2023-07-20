@@ -1,10 +1,11 @@
 import "../pages/Mobile.scss";
 import { useEffect, useState } from "react";
-import { fetchAllProducts } from "../service/productService";
+import { fetchAllProducts, fetchFilterName } from "../service/productService";
 import _ from "lodash";
 
 function Mobile() {
   const [listProducts, setListProducts] = useState([]);
+  const [listFiltersName, setListFiltersName] = useState([]);
   const [numOfProduct, setNumOfProduct] = useState(15);
   const [isAllLoaded, setIsAllLoaded] = useState(false);
 
@@ -20,6 +21,7 @@ function Mobile() {
 
   useEffect(() => {
     getProducts();
+    getFilterName();
   }, []);
 
   const getProducts = async () => {
@@ -29,61 +31,17 @@ function Mobile() {
     }
   };
 
-  // const getFilterName = async () => {
-  //   let respone = await fetchFilterName();
-  //   if (respone && respone.data) {
-  //     setListProducts(respone.data);
-  //   }
-  // };
-
-  const handleCatelogy = (cat) => {
-    const updateListProducts = listProducts.filter((x) => x.brand === cat);
-    setListProducts(updateListProducts);
+  const getFilterName = async () => {
+    let respone = await fetchFilterName();
+    if (respone && respone.data) {
+      setListFiltersName(respone.data);
+    }
   };
 
-  const filterName = [
-    {
-      validate: "Danh mục",
-      keyword: [
-        "Samsung",
-        "Xiaomi",
-        "OPPO",
-        "TECNO",
-        "Nokia",
-        "realme",
-        "Vivo",
-        "HONOR",
-        "Infinix",
-        "ROG",
-        "Nubia",
-        "XOR",
-        "Masstel",
-        "TCL",
-        "Itel",
-      ],
-    },
-    {
-      validate: "Thương hiệu",
-      keyword: [
-        "Nokia",
-        "Vivo",
-        "realme",
-        "TECNO",
-        "Itel",
-        "HONOR",
-        "TCL",
-        "XOR",
-        "Nubia",
-        "Infinix",
-        "Apple",
-        "Samsung",
-        "Oppo",
-        "Asus",
-        "Xiaomi",
-        "Huawei",
-      ],
-    },
-  ];
+  const handleCatelogy = (cat) => {
+    const updateProduct = listProducts.filter((x) => x.brand === cat);
+    setListProducts(updateProduct);
+  };
 
   const filterPrice = {
     validate: "Giá",
@@ -240,7 +198,7 @@ function Mobile() {
         <div className="nav-fillter">
           <div className="group-filter">
             <strong>Lọc danh sách: </strong>
-            {filterName.map((itemF, indexF) => {
+            {listFiltersName.map((itemF, indexF) => {
               return (
                 <div className="item-filter" key={indexF}>
                   <a>

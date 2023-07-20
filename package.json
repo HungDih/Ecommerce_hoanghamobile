@@ -20,6 +20,7 @@
     "sass": "^1.63.6",
     "web-vitals": "^1.1.2"
   },
+  "homepage": "http://localhost:3000/dien-thoai",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
