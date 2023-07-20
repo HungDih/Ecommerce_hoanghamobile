@@ -87,12 +87,12 @@
   .nav-fillter {
     position: relative;
 
-    .detail-filter {
+    .group-fillter {
       display: flex;
       align-items: center;
       justify-content: flex-end;
 
-      .header-fillter {
+      .item-filter {
         margin-right: 20px;
 
         a {
@@ -105,12 +105,19 @@
           &:hover {
             color: #fd475a;
           }
+          &:hover .sub {
+            display: block;
+          }
 
           i {
             margin-left: 5px;
             font-size: 10px;
             line-height: 49.5px;
           }
+        }
+
+        .sub {
+          // display: none;
         }
       }
     }

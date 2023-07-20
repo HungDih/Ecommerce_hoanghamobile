@@ -4,7 +4,7 @@ import { fetchAllProducts } from "../service/productService";
 import _ from "lodash";
 
 function Mobile() {
-  const [listProducts, setlistProducts] = useState([]);
+  const [listProducts, setListProducts] = useState([]);
   const [numOfProduct, setNumOfProduct] = useState(15);
   const [isAllLoaded, setIsAllLoaded] = useState(false);
 
@@ -25,20 +25,103 @@ function Mobile() {
   const getProducts = async () => {
     let respone = await fetchAllProducts();
     if (respone && respone.data) {
-      setlistProducts(respone.data);
+      setListProducts(respone.data);
     }
   };
-  const filter = [
-    "Danh mục",
-    "Thương hiệu",
-    "Giá",
-    "Bluetooth",
-    "Độ phân giải",
-    "RAM",
-    "Sắp xếp",
+
+  // const getFilterName = async () => {
+  //   let respone = await fetchFilterName();
+  //   if (respone && respone.data) {
+  //     setListProducts(respone.data);
+  //   }
+  // };
+
+  const handleCatelogy = (cat) => {
+    const updateListProducts = listProducts.filter((x) => x.brand === cat);
+    setListProducts(updateListProducts);
+  };
+
+  const filterName = [
+    {
+      validate: "Danh mục",
+      keyword: [
+        "Samsung",
+        "Xiaomi",
+        "OPPO",
+        "TECNO",
+        "Nokia",
+        "realme",
+        "Vivo",
+        "HONOR",
+        "Infinix",
+        "ROG",
+        "Nubia",
+        "XOR",
+        "Masstel",
+        "TCL",
+        "Itel",
+      ],
+    },
+    {
+      validate: "Thương hiệu",
+      keyword: [
+        "Nokia",
+        "Vivo",
+        "realme",
+        "TECNO",
+        "Itel",
+        "HONOR",
+        "TCL",
+        "XOR",
+        "Nubia",
+        "Infinix",
+        "Apple",
+        "Samsung",
+        "Oppo",
+        "Asus",
+        "Xiaomi",
+        "Huawei",
+      ],
+    },
   ];
 
-  console.log(filter.map((item, index) => item));
+  const filterPrice = {
+    validate: "Giá",
+    keyword: [
+      {
+        label: "Trên 100 triệu",
+        value: "100,000,000 ₫",
+      },
+      {
+        label: "Dưới 1 triệu",
+        value: "1,000,000 ₫",
+      },
+      {
+        label: "1 đến 2 triệu",
+        value: "100,000,000 ₫",
+      },
+      {
+        label: "Trên 100 triệu",
+        value: "100,000,000 ₫",
+      },
+      {
+        label: "Trên 100 triệu",
+        value: "100,000,000 ₫",
+      },
+      {
+        label: "Trên 100 triệu",
+        value: "100,000,000 ₫",
+      },
+      {
+        label: "Trên 100 triệu",
+        value: "100,000,000 ₫",
+      },
+      {
+        label: "Trên 100 triệu",
+        value: "100,000,000 ₫",
+      },
+    ],
+  };
 
   const brand = [
     {
@@ -155,26 +238,30 @@ function Mobile() {
         </div>
 
         <div className="nav-fillter">
-          <div className="detail-filter">
+          <div className="group-filter">
             <strong>Lọc danh sách: </strong>
-            <div className="header-fillter">
-              {filter.map((item, index) => {
-                return (
-                  <a key={`header-${index}`}>
-                    {item}
+            {filterName.map((itemF, indexF) => {
+              return (
+                <div className="item-filter" key={indexF}>
+                  <a>
+                    {itemF.validate}
                     <i className="fa-solid fa-angle-down" />
                   </a>
-                );
-              })}
-
-              <div className="sub-filter">
-                <ul>
-                  <li>
-                    <a href="/dien-thoai-di-dong/iphone">Apple</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+                  <div className="sub">
+                    {itemF.keyword.map((itemK, indexK) => {
+                      return (
+                        <button
+                          key={indexK}
+                          onClick={() => handleCatelogy(itemK)}
+                        >
+                          {itemK}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
 

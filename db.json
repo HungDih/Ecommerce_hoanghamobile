@@ -480,5 +480,48 @@
       "images": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/03/31/image-removebg-preview.png",
       "id": 40
     }
+  ],
+  "filterName": [
+    {
+      "validate": "Danh mục",
+      "keyword": [
+        "Samsung",
+        "Xiaomi",
+        "OPPO",
+        "TECNO",
+        "Nokia",
+        "realme",
+        "Vivo",
+        "HONOR",
+        "Infinix",
+        "ROG",
+        "Nubia",
+        "XOR",
+        "Masstel",
+        "TCL",
+        "Itel"
+      ]
+    },
+    {
+      "validate": "Thương hiệu",
+      "keyword": [
+        "Nokia",
+        "Vivo",
+        "realme",
+        "TECNO",
+        "Itel",
+        "HONOR",
+        "TCL",
+        "XOR",
+        "Nubia",
+        "Infinix",
+        "Apple",
+        "Samsung",
+        "Oppo",
+        "Asus",
+        "Xiaomi",
+        "Huawei"
+      ]
+    }
   ]
 }
