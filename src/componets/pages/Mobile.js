@@ -1,13 +1,21 @@
 import "../pages/Mobile.scss";
 import { useEffect, useState } from "react";
-import { fetchAllProducts, fetchFilterName } from "../service/productService";
-import _ from "lodash";
+import {
+  fetchCarousel,
+  fetchAllProducts,
+  fetchFilterName,
+  fetchFilterPrice,
+} from "../service/productService";
+// import _, { range } from "lodash";
 
 function Mobile() {
+  const [brand, setBrand] = useState([]);
   const [listProducts, setListProducts] = useState([]);
   const [listFiltersName, setListFiltersName] = useState([]);
+  const [listFilterPrice, setListFilterPrice] = useState([]);
   const [numOfProduct, setNumOfProduct] = useState(15);
   const [isAllLoaded, setIsAllLoaded] = useState(false);
+  const [originData, setOriginData] = useState(listProducts);
 
   const productLoaded = listProducts.slice(0, numOfProduct);
 
@@ -20,8 +28,10 @@ function Mobile() {
   };
 
   useEffect(() => {
+    getBrand();
     getProducts();
     getFilterName();
+    getFilterPrice();
   }, []);
 
   const getProducts = async () => {
@@ -31,6 +41,14 @@ function Mobile() {
     }
   };
 
+  const getBrand = async () => {
+    let respone = await fetchCarousel();
+    if (respone && respone.data) {
+      setBrand(respone.data);
+    }
+  };
+
+  //Handle filterName
   const getFilterName = async () => {
     let respone = await fetchFilterName();
     if (respone && respone.data) {
@@ -39,115 +57,30 @@ function Mobile() {
   };
 
   const handleCatelogy = (cat) => {
-    const updateProduct = listProducts.filter((x) => x.brand === cat);
-    setListProducts(updateProduct);
+    const updateProduct = originData.filter((x) => x.brand === cat);
+    setOriginData(updateProduct);
   };
 
-  const filterPrice = {
-    validate: "Giá",
-    keyword: [
-      {
-        label: "Trên 100 triệu",
-        value: "100,000,000 ₫",
-      },
-      {
-        label: "Dưới 1 triệu",
-        value: "1,000,000 ₫",
-      },
-      {
-        label: "1 đến 2 triệu",
-        value: "100,000,000 ₫",
-      },
-      {
-        label: "Trên 100 triệu",
-        value: "100,000,000 ₫",
-      },
-      {
-        label: "Trên 100 triệu",
-        value: "100,000,000 ₫",
-      },
-      {
-        label: "Trên 100 triệu",
-        value: "100,000,000 ₫",
-      },
-      {
-        label: "Trên 100 triệu",
-        value: "100,000,000 ₫",
-      },
-      {
-        label: "Trên 100 triệu",
-        value: "100,000,000 ₫",
-      },
-    ],
+  //Handle filterPrice
+  const getFilterPrice = async () => {
+    let respone = await fetchFilterPrice();
+    if (respone && respone.data) {
+      setListFilterPrice(respone.data);
+    }
   };
 
-  const brand = [
-    {
-      name: "Apple",
-      path: "/dien-thoai/Apple",
-      logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2022/09/07/logoooooooooooooooo.png",
-    },
-    {
-      name: "Samsung",
-      path: "/dien-thoai/Samsung",
-      logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/11/30/samsung-logo-transparent.png",
-    },
-    {
-      name: "Xiaomi",
-      path: "/dien-thoai/Xiaomi",
-      logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2021/05/27/xiaomi-global-logo-rgb-logo-moi.png",
-    },
-    {
-      name: "OPPO",
-      path: "/dien-thoai/OPPO",
-      logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(3).png",
-    },
-    {
-      name: "TECNO",
-      path: "/dien-thoai/TECNO",
-      logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/06/02/tecno.png",
-    },
-    {
-      name: "Nokia",
-      path: "/dien-thoai/Nokia",
-      logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(4).png",
-    },
-    {
-      name: "Realme",
-      path: "/dien-thoai/Realme",
-      logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(6).png",
-    },
-    {
-      name: "Vivo",
-      path: "/dien-thoai/Vivo",
-      logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/11/30/vivo-logo.png",
-    },
-    {
-      name: "Honor",
-      path: "/dien-thoai/Honor",
-      logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/06/19/honor-logo-2022-svg.png",
-    },
-    {
-      name: "Infinix",
-      path: "/dien-thoai/Infinix",
-      logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/05/26/infinix-logo-svg.png",
-    },
-    {
-      name: "ROG",
-      path: "/dien-thoai/ROG",
-      logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/06/12/rog.png",
-    },
-    {
-      name: "XOR",
-      path: "/dien-thoai/XOR",
-      logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2021/12/24/xorr.png",
-    },
-    {
-      name: "Masstel",
-      path: "/dien-thoai/Masstel",
-      logo: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/10/30/logo-masstel-4.png",
-    },
-  ];
+  const handlePrice = (filterType) => {
+    const { minPrice, maxPrice } = listFilterPrice.ranges.find(
+      (x) => x.label === filterType
+    );
+    const filteredPrice = listProducts.filter((product) => {
+      const price = parseInt(product.price.replace(/\D/g, ""), 10);
+      return price >= minPrice || price <= maxPrice;
+    });
+    setListFilterPrice(filteredPrice);
+  };
+
+  // console.log(listFilterPrice.ranges);
 
   return (
     <div className="content">
@@ -205,21 +138,42 @@ function Mobile() {
                     {itemF.validate}
                     <i className="fa-solid fa-angle-down" />
                   </a>
-                  <div className="sub">
-                    {itemF.keyword.map((itemK, indexK) => {
-                      return (
-                        <button
-                          key={indexK}
-                          onClick={() => handleCatelogy(itemK)}
-                        >
-                          {itemK}
-                        </button>
-                      );
-                    })}
+                  <div className="sub-filter">
+                    <div className="list-filter">
+                      {itemF.keyword.map((itemK, indexK) => {
+                        return (
+                          <button
+                            key={indexK}
+                            onClick={() => handleCatelogy(itemK)}
+                          >
+                            {itemK}
+                          </button>
+                        );
+                      })}
+                    </div>
                   </div>
                 </div>
               );
             })}
+
+            {/* <div className="item-filter">
+              <a>
+                {listFilterPrice.validate}
+                <i className="fa-solid fa-angle-down" />
+              </a>
+              <div className="sub-filter">
+                <div className="list-filter">
+                  {listFilterPrice.ranges.map((item, index) => {
+                  return (
+                    <button key={index} onClick={() => handlePrice(item.label)}>
+                      {item.label}
+                    </button>
+                  );
+                })}
+                </div>
+              </div>
+            </div> */}
+
           </div>
         </div>
 

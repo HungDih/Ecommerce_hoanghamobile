@@ -1,10 +1,10 @@
 .content {
   width: 1200px;
   margin: 0 auto;
-  .top-ads {
-    .img-ads {
-    }
-  }
+  // .top-ads {
+  //   .img-ads {
+  //   }
+  // }
 
   .brand-carousel {
     padding: 10px 0;
@@ -84,10 +84,11 @@
       padding: 15px 20px;
     }
   }
+
   .nav-fillter {
     position: relative;
 
-    .group-fillter {
+    .group-filter {
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -96,17 +97,15 @@
         margin-right: 20px;
 
         a {
-          padding: 15px 10px;
+          padding: 0 10px;
           margin-right: 20px;
           font-size: 13px;
           color: #111;
           text-decoration: none;
           cursor: pointer;
+
           &:hover {
             color: #fd475a;
-          }
-          &:hover .sub {
-            display: block;
           }
 
           i {
@@ -116,40 +115,38 @@
           }
         }
 
-        .sub {
-          // display: none;
+        &:hover .sub-filter {
+          display: block;
         }
-      }
-    }
 
-    .sub-filter {
-      position: absolute;
-      width: 100%;
-      z-index: 123;
-      left: 0;
-      top: 40px;
-      padding-top: 10px;
+        .sub-filter {
+          display: none;
+          position: absolute;
+          width: 100%;
+          z-index: 123;
+          left: 0;
+          top: 40px;
+          padding-top: 14px;
 
-      ul {
-        background: #fff;
-        box-shadow: 0 3px 6px #00000029;
-        border-radius: 14px;
-        margin: 0;
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-        padding: 5px 10px;
-        grid-column-gap: 10px;
+          .list-filter {
+            background: #fff;
+            box-shadow: 0 3px 6px #00000029;
+            border-radius: 14px;
+            margin: 0;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            padding: 5px 10px;
+            grid-column-gap: 10px;
 
-        li {
-          list-style: none;
-          padding: 5px;
-
-          a {
-            display: flex;
-
-            i {
-              color: #888;
-              margin-left: 4px;
+            button {
+              text-align: left;
+              background-color: transparent;
+              border: none;
+              font-size: 13px;
+              padding: 5px;
+              &:hover {
+                color: #009a82;
+              }
             }
           }
         }
@@ -330,7 +327,7 @@
   }
   .more-product {
     text-align: center;
-    button {
+    > button {
       margin: 30px auto 20px auto;
       padding: 6px 50px;
       display: inline-block;

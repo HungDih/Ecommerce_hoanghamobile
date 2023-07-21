@@ -523,5 +523,269 @@
         "Huawei"
       ]
     }
+  ],
+  "filterPrice": {
+    "validate": "Giá",
+    "ranges": [
+      {
+        "label": "Trên 100 triệu",
+        "minPrice": 100000000,
+        "maxPrice": 999999999999999
+      },
+      {
+        "label": "Dưới 1 triệu",
+        "minPrice": 0,
+        "maxPrice": 1000000
+      },
+      {
+        "label": "1 đến 2 triệu",
+        "minPrice": 1000000,
+        "maxPrice": 2000000
+      },
+      {
+        "label": "2 đến 3 triệu",
+        "minPrice": 2000000,
+        "maxPrice": 3000000
+      },
+      {
+        "label": "3 đến 4 triệu",
+        "minPrice": 3000000,
+        "maxPrice": 4000000
+      },
+      {
+        "label": "4 đến 5 triệu",
+        "minPrice": 4000000,
+        "maxPrice": 5000000
+      },
+      {
+        "label": "5 đến 6 triệu",
+        "minPrice": 5000000,
+        "maxPrice": 6000000
+      },
+      {
+        "label": "6 đến 8 triệu",
+        "minPrice": 6000000,
+        "maxPrice": 8000000
+      },
+      {
+        "label": "8 đến 10 triệu",
+        "minPrice": 8000000,
+        "maxPrice": 10000000
+      },
+      {
+        "label": "10 đến 12 triệu",
+        "minPrice": 10000000,
+        "maxPrice": 12000000
+      },
+      {
+        "label": "12 đến 15 triệu",
+        "minPrice": 12000000,
+        "maxPrice": 15000000
+      },
+      {
+        "label": "15 đến 20 triệu",
+        "minPrice": 15000000,
+        "maxPrice": 20000000
+      },
+      {
+        "label": "20 đến 100 triệu",
+        "minPrice": 20000000,
+        "maxPrice": 100000000
+      }
+    ]
+  },
+  "carousel": [
+    {
+      "name": "Apple",
+      "path": "/dien-thoai/Apple",
+      "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2022/09/07/logoooooooooooooooo.png"
+    },
+    {
+      "name": "Samsung",
+      "path": "/dien-thoai/Samsung",
+      "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/11/30/samsung-logo-transparent.png"
+    },
+    {
+      "name": "Xiaomi",
+      "path": "/dien-thoai/Xiaomi",
+      "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2021/05/27/xiaomi-global-logo-rgb-logo-moi.png"
+    },
+    {
+      "name": "OPPO",
+      "path": "/dien-thoai/OPPO",
+      "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(3).png"
+    },
+    {
+      "name": "TECNO",
+      "path": "/dien-thoai/TECNO",
+      "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/06/02/tecno.png"
+    },
+    {
+      "name": "Nokia",
+      "path": "/dien-thoai/Nokia",
+      "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(4).png"
+    },
+    {
+      "name": "Realme",
+      "path": "/dien-thoai/Realme",
+      "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(6).png"
+    },
+    {
+      "name": "Vivo",
+      "path": "/dien-thoai/Vivo",
+      "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/11/30/vivo-logo.png"
+    },
+    {
+      "name": "Honor",
+      "path": "/dien-thoai/Honor",
+      "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/06/19/honor-logo-2022-svg.png"
+    },
+    {
+      "name": "Infinix",
+      "path": "/dien-thoai/Infinix",
+      "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/05/26/infinix-logo-svg.png"
+    },
+    {
+      "name": "ROG",
+      "path": "/dien-thoai/ROG",
+      "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/06/12/rog.png"
+    },
+    {
+      "name": "XOR",
+      "path": "/dien-thoai/XOR",
+      "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2021/12/24/xorr.png"
+    },
+    {
+      "name": "Masstel",
+      "path": "/dien-thoai/Masstel",
+      "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/10/30/logo-masstel-4.png"
+    }
+  ],
+  "footerSection": [
+    {
+      "header": "Hỗ Trợ -Dịch vụ",
+      "extends": [
+        {
+          "title": "Mua hàng trả góp",
+          "path": "https://hoanghamobile.com/mua-hang-tra-gop"
+        },
+        {
+          "title": "Hướng dẫn đặt hàng và thanh toán",
+          "path": "https://hoanghamobile.com/huong-dan-dat-hang"
+        },
+        {
+          "title": "Tra cứu đơn hàng",
+          "path": "https://hoanghamobile.com/order/check"
+        },
+        {
+          "title": "Chính sách bảo hành",
+          "path": "https://hoanghamobile.com/chinh-sach-bao-hanh"
+        },
+        {
+          "title": "Phạm vi, điều khoản gói bảo hành mở rộng",
+          "path": "https://hoanghamobile.com/dat-hang/bao-hanh-mo-rong"
+        },
+        {
+          "title": "Chính sách bảo mật",
+          "path": "https://hoanghamobile.com/chinh-sach-bao-mat"
+        },
+        {
+          "title": "Chính sách giải quyết khiếu nại",
+          "path": "https://hoanghamobile.com/chinh-sach-giai-quyet-khieu-nai"
+        },
+        {
+          "title": "Câu hỏi thường gặp",
+          "path": "https://hoanghamobile.com/dieu-khoan-mua-ban-hang-hoa"
+        }
+      ]
+    },
+    {
+      "header": "Thông Tin Liên Hệ",
+      "extends": [
+        {
+          "title": "Bán hàng Online",
+          "path": "https://hoanghamobile.com/mua-hang-online"
+        },
+        {
+          "title": "Chăm sóc khách hàng",
+          "path": "https://hoanghamobile.com/cham-soc-khach-hang"
+        },
+        {
+          "title": "Dịch vụ sửa chữa Hoàng Hà Care",
+          "path": "https://hoanghamobile.com/tin-tuc/hoang-ha-care-dich-vu-sua-chua-dien-thoai-may-tinh-bang-voi-gia-tot-nhat-thi-truong"
+        },
+        {
+          "title": "Liên hệ khối văn phòng",
+          "path": "https://hoanghamobile.com/lien-he-khoi-van-phong"
+        },
+        {
+          "title": "Hợp tác kinh doanh",
+          "path": "https://hoanghamobile.com/hop-tac-kinh-doanh"
+        },
+        { "title": "Chính sách bảo mật", "path": "Tra cứu bảo hành" }
+      ]
+    },
+    {
+      "header": "Hệ Thống 127 Siêu Thị Trên Toàn Quốc",
+      "extends": [
+        {
+          "title": "Danh sách 127 siêu thị trên toàn quốc",
+          "path": "https://hoanghamobile.com/he-thong-cua-hang"
+        }
+      ]
+    },
+    {
+      "header": "Tổng đài",
+      "extends": [
+        {
+          "title": "1900.2091",
+          "path": "tel:1900.2091"
+        }
+      ]
+    },
+    {
+      "header": "Thanh toán miễn phí",
+      "label": [
+        {
+          "row": "Visa,Mastercard",
+          "src": [
+            "https://hoanghamobile.com/Content/web/img/logo-visa.png",
+            "https://hoanghamobile.com/Content/web/img/logo-master.png"
+          ]
+        },
+        {
+          "row": "JCB,SamsungPay",
+          "src": [
+            "https://hoanghamobile.com/Content/web/img/logo-jcb.png",
+            "https://hoanghamobile.com/Content/web/img/logo-samsungpay.png"
+          ]
+        },
+        {
+          "row": "ATM,VNPay",
+          "src": [
+            "https://hoanghamobile.com/Content/web/img/logo-atm.png",
+            "https://hoanghamobile.com/Content/web/img/logo-vnpay.png"
+          ]
+        }
+      ]
+    },
+
+    {
+      "header": "Hình thức vận chuyển",
+      "label": [
+        {
+          "row": "NT,VNPost",
+          "src": [
+            "https://hoanghamobile.com/Content/web/img/nhattin.jpg",
+            "https://hoanghamobile.com/Content/web/img/vnpost.jpg"
+          ]
+        },
+        {
+          "row": "BCT",
+          "src": "https://hoanghamobile.com/Content/web/img/logo-bct.png",
+          "path": "http://online.gov.vn/Home/WebDetails/28738?AspxAutoDetectCookieSupport=1"
+        }
+      ]
+    }
   ]
 }
