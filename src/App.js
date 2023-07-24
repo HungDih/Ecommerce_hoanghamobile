@@ -1,6 +1,5 @@
 import Header from "./componets/Header/Header";
 import Footer from "./componets/Footer/Footer";
-// import Home from "./componets/Home";
 
 import Mobile from "./componets/pages/Mobile";
 import Register from "./componets/Register";
@@ -12,7 +11,6 @@ function App() {
     <div className="app">
       <Header />
       <Routes >
-        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/dien-thoai" element={<Mobile />} />
         <Route path="/register" element={<Register />} />
       </Routes>

@@ -13,9 +13,7 @@ const fetchFilterName = () => {
 };
 
 const fetchFilterPrice = async () => {
-  let respone = await axios.get("http://localhost:8000/filterPrice");
-  console.log("from products.js :", respone);
-  return respone;
+  return axios.get("http://localhost:8000/filterPrice");
 };
 
 export { fetchCarousel, fetchAllProducts, fetchFilterName, fetchFilterPrice };

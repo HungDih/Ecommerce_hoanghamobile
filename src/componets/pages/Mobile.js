@@ -6,7 +6,6 @@ import {
   fetchFilterName,
   fetchFilterPrice,
 } from "../service/productService";
-// import _, { range } from "lodash";
 
 function Mobile() {
   const [brand, setBrand] = useState([]);
@@ -16,7 +15,6 @@ function Mobile() {
   const [numOfProduct, setNumOfProduct] = useState(15);
   const [isAllLoaded, setIsAllLoaded] = useState(false);
   const [originData, setOriginData] = useState([]);
-  const [loading, setLoading] = useState(true);
 
   const productLoaded = listProducts.slice(0, numOfProduct);
 
@@ -32,27 +30,23 @@ function Mobile() {
     getBrand();
     getProducts();
     getFilterName();
+    getFilterPrice();
   }, []);
 
-  useEffect(() => {
-    setTimeout(() => {
-      getFilterPrice();
-      setLoading(false);
-    }, 100);
-  }, [loading]);
+  //Carousel
+  const getBrand = async () => {
+    let respone = await fetchCarousel();
+    if (respone && respone.data) {
+      setBrand(respone.data);
+    }
+  };
 
+  // List Product
   const getProducts = async () => {
     let respone = await fetchAllProducts();
     if (respone && respone.data) {
       setListProducts(respone.data);
       setOriginData(respone.data);
-    }
-  };
-
-  const getBrand = async () => {
-    let respone = await fetchCarousel();
-    if (respone && respone.data) {
-      setBrand(respone.data);
     }
   };
 
@@ -63,7 +57,6 @@ function Mobile() {
       setListFiltersName(respone.data);
     }
   };
-
   const handleCatelogy = (cat) => {
     const updateProduct = originData.filter((x) => x.brand === cat);
     setListProducts(updateProduct);
@@ -72,24 +65,25 @@ function Mobile() {
   //Handle filterPrice
   const getFilterPrice = async () => {
     let respone = await fetchFilterPrice();
-    if (respone && respone.data) {
-      setListFilterPrice(respone.data);
+    if (respone && respone.data.ranges) {
+      setListFilterPrice(respone.data.ranges);
     }
-    // console.log(respone.data.ranges)
-    console.log("from Mobile.js :", listFilterPrice);
   };
 
   const handlePrice = (filterType) => {
-    const { minPrice, maxPrice } = listFilterPrice.ranges.find(
+    const { minPrice, maxPrice } = listFilterPrice.find(
       (x) => x.label === filterType
     );
-    const filteredPrice = listProducts.filter((product) => {
-      const price = parseInt(product.price.replace(/\D/g, ""), 10);
-      return price >= minPrice || price <= maxPrice;
+    const listFilteredPrice = [];
+    originData.forEach((item) => {
+      const priceData = parseInt(item.newPrice.replace(/\D/g, ""), 10);
+      if (priceData >= minPrice && priceData <= maxPrice) {
+        return listFilteredPrice.push(item);
+      }
+      return listFilteredPrice;
     });
-    setListFilterPrice(filteredPrice);
+    setListProducts(listFilteredPrice);
   };
-
 
   return (
     <div className="content">
@@ -109,6 +103,7 @@ function Mobile() {
         <button type="button" role="presentation" className="btn-directional">
           <i className="fa-solid fa-caret-left"></i>
         </button>
+
         <ul className="list-carousel">
           {brand.map((item, index) => {
             return (
@@ -120,10 +115,9 @@ function Mobile() {
             );
           })}
         </ul>
+
         <button type="button" role="presentation" className="btn-directional">
-          <span aria-label="Previous">
-            <i className="fa-solid fa-caret-right"></i>
-          </span>
+          <i className="fa-solid fa-caret-right"></i>
         </button>
       </div>
       <div className="products">
@@ -167,22 +161,21 @@ function Mobile() {
 
             <div className="item-filter">
               <a>
-                {listFilterPrice.validate}
+                Giá
                 <i className="fa-solid fa-angle-down" />
               </a>
               <div className="sub-filter">
                 <div className="list-filter">
-                  {!loading &&
-                    listFilterPrice.ranges.map((item, index) => {
-                      return (
-                        <button
-                          key={index}
-                          onClick={() => handlePrice(item.label)}
-                        >
-                          {item.label}
-                        </button>
-                      );
-                    })}
+                  {listFilterPrice.map((item, index) => {
+                    return (
+                      <button
+                        key={index}
+                        onClick={() => handlePrice(item.label)}
+                      >
+                        {item.label}
+                      </button>
+                    );
+                  })}
                 </div>
               </div>
             </div>

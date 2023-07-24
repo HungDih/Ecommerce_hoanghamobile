@@ -525,7 +525,6 @@
     }
   ],
   "filterPrice": {
-    "validate": "Giá",
     "ranges": [
       {
         "label": "Trên 100 triệu",
@@ -726,7 +725,7 @@
       ]
     },
     {
-      "header": "Hệ Thống 127 Siêu Thị Trên Toàn Quốc",
+      "header": "Hệ Thống 127 siêu thị trên toàn quốc",
       "extends": [
         {
           "title": "Danh sách 127 siêu thị trên toàn quốc",
@@ -786,6 +785,414 @@
           "path": "http://online.gov.vn/Home/WebDetails/28738?AspxAutoDetectCookieSupport=1"
         }
       ]
+    }
+  ],
+  "topNav": [
+    { "id": 1, "title": "Bản mobile", "path": "/" },
+    { "id": 2, "title": "Giới thiệu", "path": "/gioi-thieu" },
+    { "id": 3, "title": "Sản phẩm đã xem", "path": "/san-pham-da-xem" },
+    { "id": 4, "title": "Trung tâm bảo hành", "path": "/trung-tam-bh" },
+    { "id": 5, "title": "Hệ thống 127 siêu thị", "path": "/dai-ly" },
+    { "id": 6, "title": "Tuyển dụng", "path": "/tuyen-dung" },
+    { "id": 7, "title": "Tra cứu đơn hàng", "path": "/tra-cuu-dh" },
+    { "id": 8, "title": "Đăng nhập", "path": "/login" }
+  ],
+  "catelogy": [
+    {
+      "id": 0,
+      "title": "Điện thoại",
+      "path": "/dien-thoai",
+      "icon": {
+        "type": "i",
+        "key": "",
+        "ref": "",
+        "props": { "className": "fa-solid fa-mobile-screen-button" },
+        "_owner": "",
+        "_store": {}
+      },
+      "group": [
+        {
+          "heading": "Hãng sản xuất",
+          "extend": [
+            {
+              "name": "Apple",
+              "path": "/dien-thoai/Apple",
+              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2022/09/07/logoooooooooooooooo.png"
+            },
+            {
+              "name": "Samsung",
+              "path": "/dien-thoai/Samsung",
+              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/11/30/samsung-logo-transparent.png"
+            },
+            {
+              "name": "Xiaomi",
+              "path": "/dien-thoai/Xiaomi",
+              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2021/05/27/xiaomi-global-logo-rgb-logo-moi.png"
+            },
+            {
+              "name": "OPPO",
+              "path": "/dien-thoai/OPPO",
+              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(3).png"
+            },
+            {
+              "name": "TECNO",
+              "path": "/dien-thoai/TECNO",
+              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/06/02/tecno.png"
+            },
+            {
+              "name": "Nokia",
+              "path": "/dien-thoai/Nokia",
+              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(4).png"
+            },
+            {
+              "name": "Realme",
+              "path": "/dien-thoai/Realme",
+              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(6).png"
+            },
+            {
+              "name": "Vivo",
+              "path": "/dien-thoai/Vivo",
+              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/11/30/vivo-logo.png"
+            },
+            {
+              "name": "Honor",
+              "path": "/dien-thoai/Honor",
+              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/06/19/honor-logo-2022-svg.png"
+            },
+            {
+              "name": "Infinix",
+              "path": "/dien-thoai/Infinix",
+              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/05/26/infinix-logo-svg.png"
+            },
+            {
+              "name": "ROG",
+              "path": "/dien-thoai/ROG",
+              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/06/12/rog.png"
+            },
+            {
+              "name": "XOR",
+              "path": "/dien-thoai/XOR",
+              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2021/12/24/xorr.png"
+            },
+            {
+              "name": "Masstel",
+              "path": "/dien-thoai/Masstel",
+              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/10/30/logo-masstel-4.png"
+            }
+          ]
+        },
+        {
+          "heading": "Mức giá",
+          "extend": [
+            { "name": "Dưới 1 triệu", "path": "/dien-thoai/<1tr" },
+            { "name": "Trên 100 triệu", "path": "/dien-thoai/>100tr" },
+            { "name": "Từ 2 đến 3 triệu", "path": "/dien-thoai/2-3tr" },
+            { "name": "Từ 3 đến 4 triệu", "path": "/dien-thoai/3-4tr" },
+            { "name": "Từ 6 đến 8 triệu", "path": "/dien-thoai/6-8tr" },
+            { "name": "Từ 15 đến 20 triệu", "path": "/dien-thoai/15-20tr" },
+            { "name": "Từ 20 đến 100 triệu", "path": "/dien-thoai/20-100tr" }
+          ]
+        },
+        { "heading": "", "extend": [{ "name": "", "path": "/" }] },
+        {
+          "heading": "Quan tâm nhất",
+          "extend": [
+            { "name": "Hôm nay", "path": "/dien-thoai/today" },
+            { "name": "Tuần này", "path": "/dien-thoai/week" },
+            { "name": "Tháng này", "path": "/dien-thoai/month" },
+            { "name": "Năm nay", "path": "/dien-thoai/year" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Đồng hồ",
+      "path": "/dong-ho",
+      "icon": {
+        "type": "i",
+        "key": "",
+        "ref": "",
+        "props": { "className": "fa-regular fa-clock" },
+        "_owner": "",
+        "_store": {}
+      },
+      "group": [
+        {
+          "heading": "Hãng sản xuất",
+          "extend": [
+            { "name": "Apple", "path": "/dong-ho/Apple" },
+            { "name": "Garmin", "path": "/dong-ho/Garmin" },
+            { "name": "HUAWEI", "path": "/dong-ho/HUAWEI" },
+            { "name": "Samsung", "path": "/dong-ho/Samsung" },
+            { "name": "Xiaomi", "path": "/dong-ho/Xiaomi" },
+            { "name": "Amazfit", "path": "/dong-ho/Amazfit" }
+          ]
+        },
+        {
+          "heading": "Mức giá",
+          "extend": [
+            { "name": "Dưới 1 triệu", "path": "/dong-ho/<1tr" },
+            { "name": "Trên 100 triệu", "path": "/dong-ho/>100tr" },
+            { "name": "Từ 2 đến 3 triệu", "path": "/dong-ho/2-3tr" },
+            { "name": "Từ 3 đến 4 triệu", "path": "/dong-ho/3-4tr" },
+            { "name": "Từ 6 đến 8 triệu", "path": "/dong-ho/6-8tr" },
+            { "name": "Từ 15 đến 20 triệu", "path": "/dong-ho/15-20tr" },
+            { "name": "Từ 20 đến 100 triệu", "path": "/dong-ho/20-100tr" }
+          ]
+        },
+        { "heading": "", "extend": [{ "name": "", "path": "/" }] },
+        {
+          "heading": "Quan tâm nhất",
+          "extend": [
+            { "name": "Hôm nay", "path": "/dong-ho/today" },
+            { "name": "Tuần này", "path": "/dong-ho/week" },
+            { "name": "Tháng này", "path": "/dong-ho/month" },
+            { "name": "Năm nay", "path": "/dong-ho/year" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Laptop",
+      "path": "/laptop",
+      "icon": {
+        "type": "i",
+        "key": "",
+        "ref": "",
+        "props": { "className": "fa-solid fa-laptop" },
+        "_owner": "",
+        "_store": {}
+      },
+      "group": [
+        {
+          "heading": "Hãng sản xuất",
+          "extend": [
+            { "name": "Apple", "path": "/laptop/Apple" },
+            { "name": "ASUS", "path": "/laptop/ASUS" },
+            { "name": "Dell", "path": "/laptop/Dell" },
+            { "name": "Acer", "path": "/laptop/Acer" },
+            { "name": "MSI", "path": "/laptop/MSI" },
+            { "name": "LG", "path": "/laptop/LG" }
+          ]
+        },
+        {
+          "heading": "Mức giá",
+          "extend": [
+            { "name": "Trên 20 triệu", "path": "/laptop/>20tr" },
+            { "name": "Từ 12 đến 15 triệu", "path": "/laptop/>12-15tr" },
+            { "name": "Từ 15 đến 20 triệu", "path": "/laptop/15-20tr" }
+          ]
+        },
+        { "heading": "", "extend": [{ "name": "", "path": "/" }] },
+        {
+          "heading": "Phân loại sản phẩm",
+          "extend": [
+            { "name": "Cao cấp - Sang trọng", "path": "/laptop/luxury" },
+            { "name": "Đồ họa - Kĩ thuật", "path": "/laptop/graphic" },
+            { "name": "Học tập - Văn phòng", "path": "/laptop/study-office" },
+            { "name": "Laptop Gaming", "path": "/laptop/gaming" },
+            { "name": "Mỏng nhẹ", "path": "/laptop/simple" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Apple",
+      "path": "/apple",
+      "icon": {
+        "type": "i",
+        "key": "",
+        "ref": "",
+        "props": { "className": "fa-brands fa-apple" },
+        "_owner": "",
+        "_store": {}
+      }
+    },
+    {
+      "id": 4,
+      "title": "Màn hình",
+      "path": "/screen",
+      "icon": {
+        "type": "i",
+        "key": "",
+        "ref": "",
+        "props": { "className": "fa-solid fa-display" },
+        "_owner": "",
+        "_store": {}
+      },
+      "group": [
+        {
+          "heading": "Hãng sản xuất",
+          "extend": [
+            { "name": "Acer", "path": "/screen/Acer" },
+            { "name": "AOC", "path": "/screen/AOC" },
+            { "name": "Asus", "path": "/screen/Asus" },
+            { "name": "Dell", "path": "/screen/Dell" },
+            { "name": "GIGABYTE", "path": "/screen/GIGABYTE" },
+            { "name": "LG", "path": "/screen/LG" }
+          ]
+        },
+        {
+          "heading": "Phân loại sản phẩm",
+          "extend": [
+            { "name": "Màn hình đồ họa", "path": "/screen/graphic" },
+            { "name": "Màn hình Gaming", "path": "/screen/gaming" },
+            { "name": "Màn hình văn phòng", "path": "/screen/study-office" },
+            { "name": "Màn hình di động", "path": "/screen/mobile" }
+          ]
+        },
+        { "heading": "", "extend": [{ "name": "", "path": "/" }] },
+        {
+          "heading": "Phụ kiện màn hình",
+          "extend": [{ "name": "", "path": "" }]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "SmartTV",
+      "path": "/tv",
+      "icon": {
+        "type": "i",
+        "key": "",
+        "ref": "",
+        "props": { "className": "fa-solid fa-tv" },
+        "_owner": "",
+        "_store": {}
+      }
+    },
+    {
+      "id": 6,
+      "title": "Tablet",
+      "path": "/tablet",
+      "icon": {
+        "type": "i",
+        "key": "",
+        "ref": "",
+        "props": { "className": "fa-solid fa-tablet" },
+        "_owner": "",
+        "_store": {}
+      }
+    },
+    {
+      "id": 7,
+      "title": "Âm thanh",
+      "path": "/am-thanh",
+      "icon": {
+        "type": "i",
+        "key": "",
+        "ref": "",
+        "props": { "className": "fa-solid fa-headphones" },
+        "_owner": "",
+        "_store": {}
+      }
+    },
+    {
+      "id": 8,
+      "title": "Smarthome",
+      "path": "/smart-home",
+      "icon": {
+        "type": "i",
+        "key": "",
+        "ref": "",
+        "props": { "className": "fa-solid fa-house-laptop" },
+        "_owner": "",
+        "_store": {}
+      }
+    },
+    {
+      "id": 9,
+      "title": "Phụ kiện",
+      "path": "/phu-kien",
+      "icon": {
+        "type": "i",
+        "key": "",
+        "ref": "",
+        "props": { "className": "fa-solid fa-paperclip" },
+        "_owner": "",
+        "_store": {}
+      }
+    },
+    {
+      "id": 10,
+      "title": "Đồ chơi CN",
+      "path": "/do-choi-cn",
+      "icon": {
+        "type": "i",
+        "key": "",
+        "ref": "",
+        "props": { "className": "fa-solid fa-gamepad" },
+        "_owner": "",
+        "_store": {}
+      }
+    },
+    {
+      "id": 11,
+      "title": "Máy trôi",
+      "path": "/may-troi-bh",
+      "icon": {
+        "type": "i",
+        "key": "",
+        "ref": "",
+        "props": { "className": "fa-solid fa-recycle" },
+        "_owner": "",
+        "_store": {}
+      }
+    },
+    {
+      "id": 12,
+      "title": "Sửa chữa",
+      "path": "/sua-chua",
+      "icon": {
+        "type": "i",
+        "key": "",
+        "ref": "",
+        "props": { "className": "fa-solid fa-screwdriver-wrench" },
+        "_owner": "",
+        "_store": {}
+      }
+    },
+    {
+      "id": 13,
+      "title": "Sim thẻ",
+      "path": "/sim-card",
+      "icon": {
+        "type": "i",
+        "key": "",
+        "ref": "",
+        "props": { "className": "fa-solid fa-sim-card" },
+        "_owner": "",
+        "_store": {}
+      }
+    },
+    {
+      "id": 14,
+      "title": "Tin hot",
+      "path": "/news",
+      "icon": {
+        "type": "i",
+        "key": "",
+        "ref": "",
+        "props": { "className": "fa-solid fa-newspaper" },
+        "_owner": "",
+        "_store": {}
+      }
+    },
+    {
+      "id": 15,
+      "title": "Ưu đãi",
+      "path": "/uu-dai",
+      "icon": {
+        "type": "i",
+        "key": "",
+        "ref": "",
+        "props": { "className": "fa-solid fa-bolt" },
+        "_owner": "",
+        "_store": {}
+      }
     }
   ]
 }
