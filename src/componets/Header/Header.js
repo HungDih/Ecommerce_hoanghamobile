@@ -104,35 +104,64 @@ function Header() {
                       <i className={item.icon.props.className} />
                       <span>{item.title}</span>
                     </a>
-
                     {item.group && (
                       <div className="sub-container">
-                        <div className="sub">
-                          {item.group.map((itemGroup, indexGroup) => {
-                            if (itemGroup.heading && itemGroup.extend) {
-                              return (
-                                <div className="group-item" key={indexGroup}>
-                                  <h4>
-                                    <a href={item.path}>{itemGroup.heading}</a>
-                                  </h4>
-                                  {itemGroup.extend.map((itemEx, indexEx) => {
-                                    return (
-                                      <ul className="menu-list" key={indexEx}>
-                                        <li>
-                                          <a href={itemEx.path}>
-                                            {itemEx.name}
-                                          </a>
-                                        </li>
-                                      </ul>
-                                    );
-                                  })}
-                                </div>
-                              );
-                            } else {
-                              return;
-                            }
-                          })}
-                        </div>
+                        {item.group.map((itemG, indexG) => {
+                          // return (
+                          //   <div>
+                          //     {itemG.heading && itemG.extend && (
+                          //       <div className="sub" key={indexG}>
+                          //         <div className="group-item">
+                          //           <h4>
+                          //             <a href={item.path}>{itemG.heading}</a>
+                          //           </h4>
+                          //           <ul className="menu-list">
+                          //             {itemG.extend.map((itemEx, indexEx) => {
+                          //               return (
+                          //                 <li key={indexEx}>
+                          //                   <a href={itemEx.path}>
+                          //                     {itemEx.name}
+                          //                   </a>
+                          //                 </li>
+                          //               );
+                          //             })}
+                          //           </ul>
+                          //         </div>
+                          //       </div>
+                          //     )}
+
+                          //     {itemG.img && item.path && (
+                          //       <div className="ads">
+                          //         <a href={itemG.path} target="_blank">
+                          //           <img src={itemG.img} />
+                          //         </a>
+                          //       </div>
+                          //     )}
+                          //   </div>
+                          // );
+
+                          if (itemG.heading && itemG.extend) {
+                            return (
+                              <div className="group-item" key={indexG}>
+                                <h4>
+                                  <a href={item.path}>{itemG.heading}</a>
+                                </h4>
+                                {itemG.extend.map((itemEx, indexEx) => {
+                                  return (
+                                    <ul className="menu-list" key={indexEx}>
+                                      <li>
+                                        <a href={itemEx.path}>{itemEx.name}</a>
+                                      </li>
+                                    </ul>
+                                  );
+                                })}
+                              </div>
+                            );
+                          } else {
+                            return;
+                          }
+                          
+                        })}
                       </div>
                     )}
                   </li>

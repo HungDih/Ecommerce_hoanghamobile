@@ -170,6 +170,7 @@
       &:hover {
         .sub-container {
           display: block;
+          z-index: 10;
         }
       }
 
@@ -243,6 +244,13 @@
             .menu-list {
               list-style: none;
               padding-left: 0;
+
+              &:first-child {
+                display: grid;
+                grid-template-columns: auto auto auto auto auto;
+                grid-column-gap: 10px;
+              }
+
               a {
                 text-decoration: none;
               }
@@ -285,6 +293,35 @@
           content: " ";
           border-radius: 2px;
           background-color: #f7941e;
+        }
+      }
+    }
+  }
+}
+
+
+.products {
+  .nav-item {
+    &:first-child {
+      .group-item {
+        &:first-child {
+          .menu-list {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-column-gap: 90px;
+          }
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      .group-item {
+        &:first-child {
+          .menu-list {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-column-gap: 90px;
+          }
         }
       }
     }
