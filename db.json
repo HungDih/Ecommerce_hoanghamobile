@@ -813,97 +813,109 @@
       },
       "group": [
         {
-          "heading": "Hãng sản xuất",
-          "extend": [
+          "menuList": [
             {
-              "name": "Apple",
-              "path": "/dien-thoai/Apple",
-              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2022/09/07/logoooooooooooooooo.png"
+              "heading": "Hãng sản xuất",
+              "extend": [
+                {
+                  "name": "Apple",
+                  "path": "/dien-thoai/Apple",
+                  "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2022/09/07/logoooooooooooooooo.png"
+                },
+                {
+                  "name": "Samsung",
+                  "path": "/dien-thoai/Samsung",
+                  "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/11/30/samsung-logo-transparent.png"
+                },
+                {
+                  "name": "Xiaomi",
+                  "path": "/dien-thoai/Xiaomi",
+                  "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2021/05/27/xiaomi-global-logo-rgb-logo-moi.png"
+                },
+                {
+                  "name": "OPPO",
+                  "path": "/dien-thoai/OPPO",
+                  "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(3).png"
+                },
+                {
+                  "name": "TECNO",
+                  "path": "/dien-thoai/TECNO",
+                  "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/06/02/tecno.png"
+                },
+                {
+                  "name": "Nokia",
+                  "path": "/dien-thoai/Nokia",
+                  "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(4).png"
+                },
+                {
+                  "name": "Realme",
+                  "path": "/dien-thoai/Realme",
+                  "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(6).png"
+                },
+                {
+                  "name": "Vivo",
+                  "path": "/dien-thoai/Vivo",
+                  "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/11/30/vivo-logo.png"
+                },
+                {
+                  "name": "Honor",
+                  "path": "/dien-thoai/Honor",
+                  "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/06/19/honor-logo-2022-svg.png"
+                },
+                {
+                  "name": "Infinix",
+                  "path": "/dien-thoai/Infinix",
+                  "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/05/26/infinix-logo-svg.png"
+                },
+                {
+                  "name": "ROG",
+                  "path": "/dien-thoai/ROG",
+                  "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/06/12/rog.png"
+                },
+                {
+                  "name": "XOR",
+                  "path": "/dien-thoai/XOR",
+                  "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2021/12/24/xorr.png"
+                },
+                {
+                  "name": "Masstel",
+                  "path": "/dien-thoai/Masstel",
+                  "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/10/30/logo-masstel-4.png"
+                }
+              ]
             },
             {
-              "name": "Samsung",
-              "path": "/dien-thoai/Samsung",
-              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/11/30/samsung-logo-transparent.png"
+              "heading": "Mức giá",
+              "extend": [
+                { "name": "Dưới 1 triệu", "path": "/dien-thoai/<1tr" },
+                { "name": "Trên 100 triệu", "path": "/dien-thoai/>100tr" },
+                { "name": "Từ 2 đến 3 triệu", "path": "/dien-thoai/2-3tr" },
+                { "name": "Từ 3 đến 4 triệu", "path": "/dien-thoai/3-4tr" },
+                { "name": "Từ 6 đến 8 triệu", "path": "/dien-thoai/6-8tr" },
+                { "name": "Từ 15 đến 20 triệu", "path": "/dien-thoai/15-20tr" },
+                {
+                  "name": "Từ 20 đến 100 triệu",
+                  "path": "/dien-thoai/20-100tr"
+                }
+              ]
             },
+            { "heading": "", "extend": [{ "name": "", "path": "/" }] },
             {
-              "name": "Xiaomi",
-              "path": "/dien-thoai/Xiaomi",
-              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2021/05/27/xiaomi-global-logo-rgb-logo-moi.png"
-            },
-            {
-              "name": "OPPO",
-              "path": "/dien-thoai/OPPO",
-              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(3).png"
-            },
-            {
-              "name": "TECNO",
-              "path": "/dien-thoai/TECNO",
-              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/06/02/tecno.png"
-            },
-            {
-              "name": "Nokia",
-              "path": "/dien-thoai/Nokia",
-              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(4).png"
-            },
-            {
-              "name": "Realme",
-              "path": "/dien-thoai/Realme",
-              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(6).png"
-            },
-            {
-              "name": "Vivo",
-              "path": "/dien-thoai/Vivo",
-              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/11/30/vivo-logo.png"
-            },
-            {
-              "name": "Honor",
-              "path": "/dien-thoai/Honor",
-              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/06/19/honor-logo-2022-svg.png"
-            },
-            {
-              "name": "Infinix",
-              "path": "/dien-thoai/Infinix",
-              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/05/26/infinix-logo-svg.png"
-            },
-            {
-              "name": "ROG",
-              "path": "/dien-thoai/ROG",
-              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/06/12/rog.png"
-            },
-            {
-              "name": "XOR",
-              "path": "/dien-thoai/XOR",
-              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2021/12/24/xorr.png"
-            },
-            {
-              "name": "Masstel",
-              "path": "/dien-thoai/Masstel",
-              "logo": "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/10/30/logo-masstel-4.png"
+              "heading": "Quan tâm nhất",
+              "extend": [
+                { "name": "Hôm nay", "path": "/dien-thoai/today" },
+                { "name": "Tuần này", "path": "/dien-thoai/week" },
+                { "name": "Tháng này", "path": "/dien-thoai/month" },
+                { "name": "Năm nay", "path": "/dien-thoai/year" }
+              ]
             }
           ]
         },
-
         {
-          "heading": "Mức giá",
-          "extend": [
-            { "name": "Dưới 1 triệu", "path": "/dien-thoai/<1tr" },
-            { "name": "Trên 100 triệu", "path": "/dien-thoai/>100tr" },
-            { "name": "Từ 2 đến 3 triệu", "path": "/dien-thoai/2-3tr" },
-            { "name": "Từ 3 đến 4 triệu", "path": "/dien-thoai/3-4tr" },
-            { "name": "Từ 6 đến 8 triệu", "path": "/dien-thoai/6-8tr" },
-            { "name": "Từ 15 đến 20 triệu", "path": "/dien-thoai/15-20tr" },
-            { "name": "Từ 20 đến 100 triệu", "path": "/dien-thoai/20-100tr" }
-          ]
-        },
-        { "heading": "", "extend": [{ "name": "", "path": "/" }] },
-        {
-          "heading": "Quan tâm nhất",
-          "extend": [
-            { "name": "Hôm nay", "path": "/dien-thoai/today" },
-            { "name": "Tuần này", "path": "/dien-thoai/week" },
-            { "name": "Tháng này", "path": "/dien-thoai/month" },
-            { "name": "Năm nay", "path": "/dien-thoai/year" }
-          ]
+          "menuAds": {
+            "img": "https://hoanghamobile.com/Uploads/2023/07/25/588x266-zfoldzflip5-250723.jpg",
+            "path": "https://hoanghamobile.com/dat-hang/samsung-galaxy-z-fold5-z-flip5?source=BannerSlider"
+          }
         }
       ]
     },
@@ -921,28 +933,37 @@
       },
       "group": [
         {
-          "heading": "Đồng hồ",
-          "extend": [
-            { "name": "Apple", "path": "/dong-ho/Apple" },
-            { "name": "Garmin", "path": "/dong-ho/Garmin" },
-            { "name": "HUAWEI", "path": "/dong-ho/HUAWEI" },
-            { "name": "Samsung", "path": "/dong-ho/Samsung" },
-            { "name": "Xiaomi", "path": "/dong-ho/Xiaomi" },
-            { "name": "Amazfit", "path": "/dong-ho/Amazfit" },
-            { "name": "Đồng hồ trẻ em", "path": "/dong-ho/dong-ho-tre-em" },
-            { "name": "realme", "path": "/dong-ho/realme" },
-            { "name": "Amazfit", "path": "/dong-ho/Amazfit" },
-            { "name": "Masstel", "path": "/dong-ho/Masstel" },
-            { "name": "OPPO", "path": "/dong-ho/OPPO" },
-            { "name": "Top vòng đeo tay", "path": "/dong-ho/top-vong-deo-tay" },
-            { "name": "SoundPEATS", "path": "/dong-ho/SoundPEATS" },
-            { "name": "Kieslect", "path": "/dong-ho/Kieslect" },
-            { "name": "Fitbit", "path": "/dong-ho/Fitbit" }
+          "menuList": [
+            {
+              "heading": "Đồng hồ",
+              "extend": [
+                { "name": "Apple", "path": "/dong-ho/Apple" },
+                { "name": "Garmin", "path": "/dong-ho/Garmin" },
+                { "name": "HUAWEI", "path": "/dong-ho/HUAWEI" },
+                { "name": "Samsung", "path": "/dong-ho/Samsung" },
+                { "name": "Xiaomi", "path": "/dong-ho/Xiaomi" },
+                { "name": "Amazfit", "path": "/dong-ho/Amazfit" },
+                { "name": "Đồng hồ trẻ em", "path": "/dong-ho/dong-ho-tre-em" },
+                { "name": "realme", "path": "/dong-ho/realme" },
+                { "name": "Amazfit", "path": "/dong-ho/Amazfit" },
+                { "name": "Masstel", "path": "/dong-ho/Masstel" },
+                { "name": "OPPO", "path": "/dong-ho/OPPO" },
+                {
+                  "name": "Top vòng đeo tay",
+                  "path": "/dong-ho/top-vong-deo-tay"
+                },
+                { "name": "SoundPEATS", "path": "/dong-ho/SoundPEATS" },
+                { "name": "Kieslect", "path": "/dong-ho/Kieslect" },
+                { "name": "Fitbit", "path": "/dong-ho/Fitbit" }
+              ]
+            }
           ]
         },
         {
-          "img": "https://hoanghamobile.com/Uploads/2023/06/22/garmin-580x266.png",
-          "path": "https://hoanghamobile.com/dong-ho/garmin?source=Topmenu"
+          "menuAds": {
+            "img": "https://hoanghamobile.com/Uploads/2023/06/22/garmin-580x266.png",
+            "path": "https://hoanghamobile.com/dong-ho/garmin?source=Topmenu"
+          }
         }
       ]
     },
@@ -960,38 +981,55 @@
       },
       "group": [
         {
-          "heading": "Hãng sản xuất",
-          "extend": [
-            { "name": "Apple", "path": "/laptop/Apple" },
-            { "name": "ASUS", "path": "/laptop/ASUS" },
-            { "name": "Dell", "path": "/laptop/Dell" },
-            { "name": "Acer", "path": "/laptop/Acer" },
-            { "name": "MSI", "path": "/laptop/MSI" },
-            { "name": "LG", "path": "/laptop/LG" }
+          "menuList": [
+            {
+              "heading": "Hãng sản xuất",
+              "extend": [
+                { "name": "Apple", "path": "/laptop/Apple" },
+                { "name": "ASUS", "path": "/laptop/ASUS" },
+                { "name": "Dell", "path": "/laptop/Dell" },
+                { "name": "Acer", "path": "/laptop/Acer" },
+                { "name": "MSI", "path": "/laptop/MSI" },
+                { "name": "LG", "path": "/laptop/LG" },
+                { "name": "HUAWEI", "path": "/laptop/HUAWEI" },
+                { "name": "Surface", "path": "/laptop/Surface" },
+                { "name": "Lenovo", "path": "/laptop/Lenovo" },
+                { "name": "HP", "path": "/laptop/HP" },
+                { "name": "GIGABYTE", "path": "/laptop/GIGABYTE" },
+                { "name": "Itel", "path": "/laptop/Itel" },
+                { "name": "Xiaomi", "path": "/laptop/Xiaomi" },
+                { "name": "Masstel", "path": "/laptop/Masstel" },
+                { "name": "Itel", "path": "/laptop/Itel" }
+              ]
+            },
+            {
+              "heading": "Mức giá",
+              "extend": [
+                { "name": "Trên 20 triệu", "path": "/laptop/>20tr" },
+                { "name": "Từ 12 đến 15 triệu", "path": "/laptop/>12-15tr" },
+                { "name": "Từ 15 đến 20 triệu", "path": "/laptop/15-20tr" }
+              ]
+            },
+            {
+              "heading": "Phân loại sản phẩm",
+              "extend": [
+                { "name": "Cao cấp - Sang trọng", "path": "/laptop/luxury" },
+                { "name": "Đồ họa - Kĩ thuật", "path": "/laptop/graphic" },
+                {
+                  "name": "Học tập - Văn phòng",
+                  "path": "/laptop/study-office"
+                },
+                { "name": "Laptop Gaming", "path": "/laptop/gaming" },
+                { "name": "Mỏng nhẹ", "path": "/laptop/simple" }
+              ]
+            }
           ]
         },
         {
-          "heading": "Mức giá",
-          "extend": [
-            { "name": "Trên 20 triệu", "path": "/laptop/>20tr" },
-            { "name": "Từ 12 đến 15 triệu", "path": "/laptop/>12-15tr" },
-            { "name": "Từ 15 đến 20 triệu", "path": "/laptop/15-20tr" }
-          ]
-        },
-        { "heading": "", "extend": [{ "name": "", "path": "/" }] },
-        {
-          "heading": "Phân loại sản phẩm",
-          "extend": [
-            { "name": "Cao cấp - Sang trọng", "path": "/laptop/luxury" },
-            { "name": "Đồ họa - Kĩ thuật", "path": "/laptop/graphic" },
-            { "name": "Học tập - Văn phòng", "path": "/laptop/study-office" },
-            { "name": "Laptop Gaming", "path": "/laptop/gaming" },
-            { "name": "Mỏng nhẹ", "path": "/laptop/simple" }
-          ]
-        },
-        {
-          "img": "https://hoanghamobile.com/Uploads/2023/07/17/580x266.png",
-          "path": "https://hoanghamobile.com/laptop?source=Topmenu"
+          "menuAds": {
+            "img": "https://hoanghamobile.com/Uploads/2023/07/17/580x266.png",
+            "path": "https://hoanghamobile.com/laptop?source=Topmenu"
+          }
         }
       ]
     },
@@ -1022,39 +1060,48 @@
       },
       "group": [
         {
-          "heading": "Hãng sản xuất",
-          "extend": [
-            { "name": "Acer", "path": "/screen/Acer" },
-            { "name": "AOC", "path": "/screen/AOC" },
-            { "name": "Asus", "path": "/screen/Asus" },
-            { "name": "Dell", "path": "/screen/Dell" },
-            { "name": "GIGABYTE", "path": "/screen/GIGABYTE" },
-            { "name": "LG", "path": "/screen/LG" },
-            { "name": "Samsung", "path": "/screen/samsung" },
-            { "name": "HP", "path": "/screen/hp" },
-            { "name": "Lenovo", "path": "/screen/lenovo" },
-            { "name": "MSI", "path": "/screen/LG" },
-            { "name": "Viewsonic", "path": "/screen/LG" },
-            { "name": "Huawei", "path": "/screen/huawei" }
+          "menuList": [
+            {
+              "heading": "Hãng sản xuất",
+              "extend": [
+                { "name": "Acer", "path": "/screen/Acer" },
+                { "name": "AOC", "path": "/screen/AOC" },
+                { "name": "Asus", "path": "/screen/Asus" },
+                { "name": "Dell", "path": "/screen/Dell" },
+                { "name": "GIGABYTE", "path": "/screen/GIGABYTE" },
+                { "name": "LG", "path": "/screen/LG" },
+                { "name": "Samsung", "path": "/screen/samsung" },
+                { "name": "HP", "path": "/screen/hp" },
+                { "name": "Lenovo", "path": "/screen/lenovo" },
+                { "name": "MSI", "path": "/screen/LG" },
+                { "name": "Viewsonic", "path": "/screen/LG" },
+                { "name": "Huawei", "path": "/screen/huawei" }
+              ]
+            },
+            {
+              "heading": "Phân loại sản phẩm",
+              "extend": [
+                { "name": "Màn hình đồ họa", "path": "/screen/graphic" },
+                { "name": "Màn hình Gaming", "path": "/screen/gaming" },
+                {
+                  "name": "Màn hình văn phòng",
+                  "path": "/screen/study-office"
+                },
+                { "name": "Màn hình di động", "path": "/screen/mobile" }
+              ]
+            },
+            { "heading": "", "extend": [{ "name": "", "path": "/" }] },
+            {
+              "heading": "Phụ kiện màn hình",
+              "extend": [{ "name": "", "path": "" }]
+            }
           ]
         },
         {
-          "heading": "Phân loại sản phẩm",
-          "extend": [
-            { "name": "Màn hình đồ họa", "path": "/screen/graphic" },
-            { "name": "Màn hình Gaming", "path": "/screen/gaming" },
-            { "name": "Màn hình văn phòng", "path": "/screen/study-office" },
-            { "name": "Màn hình di động", "path": "/screen/mobile" }
-          ]
-        },
-        { "heading": "", "extend": [{ "name": "", "path": "/" }] },
-        {
-          "heading": "Phụ kiện màn hình",
-          "extend": [{ "name": "", "path": "" }]
-        },
-        {
-          "img": "https://hoanghamobile.com/Uploads/2023/05/31/man-hinh-viewsonic_638211399154458704.jpg",
-          "path": "https://hoanghamobile.com/man-hinh-may-tinh/man-hinh-viewsonic-vx2405-p-mhd-23-8-inch-fhd-ips-144hz-1ms-250-nits-hdmi-d?source=Topmenu"
+          "menuAds": {
+            "img": "https://hoanghamobile.com/Uploads/2023/05/31/man-hinh-viewsonic_638211399154458704.jpg",
+            "path": "https://hoanghamobile.com/man-hinh-may-tinh/man-hinh-viewsonic-vx2405-p-mhd-23-8-inch-fhd-ips-144hz-1ms-250-nits-hdmi-d?source=Topmenu"
+          }
         }
       ]
     },
@@ -1068,32 +1115,38 @@
         "ref": "",
         "props": { "className": "fa-solid fa-tv" },
         "_owner": "",
-        "_store": {},
-        "group": [
-          {
-            "heading": "Hãng sản xuất",
-            "extend": [
-              { "name": "TV Xiaomi", "path": "/tv/xiaomi" },
-              { "name": "TV Casper", "path": "/tv/casper" },
-              { "name": "TV Coocaa", "path": "/tv/coocaa" },
-              { "name": "TV Itel", "path": "/tv/itel" },
-              { "name": "TV Samsung", "path": "/tv/samsung" },
-              { "name": "TV SKYWORTH", "path": "/tv/skyworth" },
-              { "name": "TV Toshiba", "path": "/tv/toshiba" }
-            ]
-          },
-          {
-            "heading": "Phụ kiện TV",
-            "extend": [
-              { "name": "Truyền hình K+", "path": "/screen/truyen-hinh-k+" }
-            ]
-          },
-          {
+        "_store": {}
+      },
+      "group": [
+        {
+          "menuList": [
+            {
+              "heading": "Hãng sản xuất",
+              "extend": [
+                { "name": "TV Xiaomi", "path": "/tv/xiaomi" },
+                { "name": "TV Casper", "path": "/tv/casper" },
+                { "name": "TV Coocaa", "path": "/tv/coocaa" },
+                { "name": "TV Itel", "path": "/tv/itel" },
+                { "name": "TV Samsung", "path": "/tv/samsung" },
+                { "name": "TV SKYWORTH", "path": "/tv/skyworth" },
+                { "name": "TV Toshiba", "path": "/tv/toshiba" }
+              ]
+            },
+            {
+              "heading": "Phụ kiện TV",
+              "extend": [
+                { "name": "Truyền hình K+", "path": "/screen/truyen-hinh-k+" }
+              ]
+            }
+          ]
+        },
+        {
+          "menuAds": {
             "img": "https://hoanghamobile.com/Uploads/2023/07/19/tv-skyworth-01.jpg",
             "path": "https://hoanghamobile.com/smart-tv/tv-skyworth?source=Topmenu"
           }
-        ]
-      }
+        }
+      ]
     },
     {
       "id": 6,
@@ -1109,20 +1162,26 @@
       },
       "group": [
         {
-          "heading": "Hãng sản xuất",
-          "extend": [
-            { "name": "Apple", "path": "/tablet/Apple" },
-            { "name": "Samsung", "path": "/tablet/Samsung" },
-            { "name": "Microsoft Surface", "path": "/tablet/Microsoft" },
-            { "name": "Lenovo", "path": "/tablet/Lenovo" },
-            { "name": "OPPO", "path": "/tablet/OPPO" },
-            { "name": "Yuho", "path": "/tablet/Yuho" },
-            { "name": "Xiaomi", "path": "/tablet/Xiaomi" }
+          "menuList": [
+            {
+              "heading": "Hãng sản xuất",
+              "extend": [
+                { "name": "Apple", "path": "/tablet/Apple" },
+                { "name": "Samsung", "path": "/tablet/Samsung" },
+                { "name": "Microsoft Surface", "path": "/tablet/Microsoft" },
+                { "name": "Lenovo", "path": "/tablet/Lenovo" },
+                { "name": "OPPO", "path": "/tablet/OPPO" },
+                { "name": "Yuho", "path": "/tablet/Yuho" },
+                { "name": "Xiaomi", "path": "/tablet/Xiaomi" }
+              ]
+            }
           ]
         },
         {
-          "img": "https://hoanghamobile.com/Uploads/2023/05/30/group-246.png",
-          "path": "https://hoanghamobile.com/may-tinh-bang/lenovo-tab-m10-gen-3-3gb-32gb-chinh-hang?source=Topmenu"
+          "menuAds": {
+            "img": "https://hoanghamobile.com/Uploads/2023/05/30/group-246.png",
+            "path": "https://hoanghamobile.com/may-tinh-bang/lenovo-tab-m10-gen-3-3gb-32gb-chinh-hang?source=Topmenu"
+          }
         }
       ]
     },
@@ -1140,24 +1199,65 @@
       },
       "group": [
         {
-          "heading": "Loa",
-          "extend": [
-            { "name": "Harman Kardon", "path": "/sound/harman-kardon" },
-            { "name": "Samsung", "path": "/sound/Samsung" },
-            { "name": "JBL", "path": "/sound/jbl" },
-            { "name": "MONSTER", "path": "/sound/MONSTER" },
-            { "name": "Sony", "path": "/sound/Sony" },
-            { "name": "Energizer", "path": "/sound/Energizer" },
-            { "name": "Huawei", "path": "/sound/Huawei" },
-            { "name": "LG", "path": "/sound/LG" },
-            { "name": "SoundPEATS", "path": "/sound/SoundPEATS" },
-            { "name": "Tekin", "path": "/sound/Tekin" },
-            { "name": "Apple", "path": "/sound/Apple" }
+          "menuList": [
+            {
+              "heading": "Loa",
+              "extend": [
+                { "name": "Harman Kardon", "path": "/sound/harman-kardon" },
+                { "name": "Samsung", "path": "/sound/Samsung" },
+                { "name": "JBL", "path": "/sound/jbl" },
+                { "name": "MONSTER", "path": "/sound/MONSTER" },
+                { "name": "Sony", "path": "/sound/Sony" },
+                { "name": "Energizer", "path": "/sound/Energizer" },
+                { "name": "Huawei", "path": "/sound/Huawei" },
+                { "name": "LG", "path": "/sound/LG" },
+                { "name": "SoundPEATS", "path": "/sound/SoundPEATS" },
+                { "name": "Tekin", "path": "/sound/Tekin" },
+                { "name": "Apple", "path": "/sound/Apple" }
+              ]
+            },
+            {
+              "heading": "Tai nghe",
+              "extend": [
+                { "name": "Sony", "path": "/sound/harman-kardon" },
+                { "name": "JBL", "path": "/sound/Samsung" },
+                { "name": "Soundpeats", "path": "/sound/jbl" },
+                { "name": "Apple", "path": "/sound/Apple" },
+                { "name": "Asus", "path": "/sound/Asus" },
+                { "name": "Beats", "path": "/sound/Beats" },
+                { "name": "Denon", "path": "/sound/Denon" },
+                { "name": "Energizer", "path": "/sound/Energizer" },
+                { "name": "Havit", "path": "/sound/Havit" },
+                { "name": "Haylou", "path": "/sound/Haylou" },
+                { "name": "Huawei", "path": "/sound/Huawei" },
+                { "name": "iWalk", "path": "/sound/iWalk" },
+                { "name": "LG", "path": "/sound/LG" },
+                { "name": "MONSTER", "path": "/sound/MONSTER" },
+                { "name": "Motorola", "path": "/sound/Motorola" },
+                { "name": "myAlo", "path": "/sound/myAlo" },
+                { "name": "Nokia", "path": "/sound/Nokia" },
+                { "name": "OPPO", "path": "/sound/OPPO" },
+                { "name": "PHILIPS", "path": "/sound/PHILIPS" },
+                { "name": "Pioneer", "path": "/sound/Pioneer" },
+                { "name": "Pisen", "path": "/sound/Pisen" },
+                { "name": "Plantronics", "path": "/sound/Plantronics" },
+                { "name": "Rapoo", "path": "/sound/Rapoo" },
+                { "name": "Razer", "path": "/sound/Razer" },
+                { "name": "realme", "path": "/sound/realme" },
+                { "name": "Samsung", "path": "/sound/Samsung" },
+                { "name": "Sennheiser", "path": "/sound/Sennheiser" },
+                { "name": "Shokz", "path": "/sound/Shokz" },
+                { "name": "Xiaomi", "path": "/sound/Xiaomi" },
+                { "name": "YAMAHA", "path": "/sound/YAMAHA" }
+              ]
+            }
           ]
         },
         {
-          "img": "https://hoanghamobile.com/Uploads/2023/06/07/top-menu-freebuds-5.png",
-          "path": "https://hoanghamobile.com/tai-nghe/tai-nghe-khong-day-huawei-freebuds-5-chinh-hang"
+          "menuAds": {
+            "img": "https://hoanghamobile.com/Uploads/2023/06/07/top-menu-freebuds-5.png",
+            "path": "https://hoanghamobile.com/tai-nghe/tai-nghe-khong-day-huawei-freebuds-5-chinh-hang"
+          }
         }
       ]
     },
@@ -1175,59 +1275,77 @@
       },
       "group": [
         {
-          "heading": "GIA DỤNG THÔNG MINH",
-          "extend": [
+          "menuList": [
             {
-              "name": "Máy lọc không khí",
-              "path": "/smart-home/may-loc-kk"
+              "heading": "GIA DỤNG THÔNG MINH",
+              "extend": [
+                {
+                  "name": "Máy lọc không khí",
+                  "path": "/smart-home/may-loc-kk"
+                },
+                {
+                  "name": "Robot, Máy hút bụi",
+                  "path": "/smart-home/robot-may-hut-bui"
+                },
+                {
+                  "name": "Phụ kiện gia dụng",
+                  "path": "/smart-home/phu-kien"
+                },
+                { "name": "FPT Play box", "path": "/smart-home/fpt-play" },
+                {
+                  "name": "Cân thông minh",
+                  "path": "/smart-home/can-thong-minh"
+                },
+                { "name": "DTH/Tivi Box K+", "path": "/smart-home/tvbox" },
+                {
+                  "name": "Khuyến mại đồ gia dụng Xiaomi",
+                  "path": "/smart-home/sale-xiaomi"
+                },
+                { "name": "Máy Chiếu", "path": "/smart-home/may-chieu" },
+                {
+                  "name": "Nồi chiên không dầu",
+                  "path": "/smart-home/noi-chien"
+                },
+                { "name": "Ổ Cắm điện", "path": "/smart-home/o-cam" },
+                { "name": "Quạt Điện", "path": "/smart-home/quat-dien" },
+                {
+                  "name": "Thiết bị định vị thông minh",
+                  "path": "/smart-home/gps"
+                }
+              ]
             },
             {
-              "name": "Robot, Máy hút bụi",
-              "path": "/smart-home/robot-may-hut-bui"
-            },
-            { "name": "Phụ kiện gia dụng", "path": "/smart-home/phu-kien" },
-            { "name": "FPT Play box", "path": "/smart-home/fpt-play" },
-            { "name": "Cân thông minh", "path": "/smart-home/can-thong-minh" },
-            { "name": "DTH/Tivi Box K+", "path": "/smart-home/tvbox" },
-            {
-              "name": "Khuyến mại đồ gia dụng Xiaomi",
-              "path": "/smart-home/sale-xiaomi"
-            },
-            { "name": "Máy Chiếu", "path": "/smart-home/may-chieu" },
-            { "name": "Nồi chiên không dầu", "path": "/smart-home/noi-chien" },
-            { "name": "Ổ Cắm điện", "path": "/smart-home/o-cam" },
-            { "name": "Quạt Điện", "path": "/smart-home/quat-dien" },
-            { "name": "Thiết bị định vị thông minh", "path": "/smart-home/gps" }
-          ]
-        },
-        {
-          "heading": "MÁY LỌC KHÔNG KHÍ",
-          "extend": [
-            {
-              "name": "Máy lọc không khí hãng Clair",
-              "path": "/smart-home/may-loc-kk-Clair"
-            },
-            {
-              "name": "Máy lọc không khí hãng Daikin",
-              "path": "/smart-home/may-loc-kk-Daikin"
-            },
-            {
-              "name": "Máy lọc không khí hãng Philips",
-              "path": "/smart-home/may-loc-kk-Philips"
-            },
-            {
-              "name": "Máy lọc không khí hãng Xiaomi",
-              "path": "/smart-home/may-loc-kk-Xiaomi"
-            },
-            {
-              "name": "Máy lọc không khí Levoit",
-              "path": "/smart-home/may-loc-kk-Levoit"
+              "heading": "MÁY LỌC KHÔNG KHÍ",
+              "extend": [
+                {
+                  "name": "Máy lọc không khí hãng Clair",
+                  "path": "/smart-home/may-loc-kk-Clair"
+                },
+                {
+                  "name": "Máy lọc không khí hãng Daikin",
+                  "path": "/smart-home/may-loc-kk-Daikin"
+                },
+                {
+                  "name": "Máy lọc không khí hãng Philips",
+                  "path": "/smart-home/may-loc-kk-Philips"
+                },
+                {
+                  "name": "Máy lọc không khí hãng Xiaomi",
+                  "path": "/smart-home/may-loc-kk-Xiaomi"
+                },
+                {
+                  "name": "Máy lọc không khí Levoit",
+                  "path": "/smart-home/may-loc-kk-Levoit"
+                }
+              ]
             }
           ]
         },
         {
-          "img": "https://hoanghamobile.com/Uploads/2023/06/21/may-loc-khong-khi-xiaomi-air-purifier-4-compact-05.jpg",
-          "path": "https://hoanghamobile.com/do-gia-dung/may-loc-khong-khi/clair"
+          "menuAds": {
+            "img": "https://hoanghamobile.com/Uploads/2023/06/21/may-loc-khong-khi-xiaomi-air-purifier-4-compact-05.jpg",
+            "path": "https://hoanghamobile.com/do-gia-dung/may-loc-khong-khi/clair"
+          }
         }
       ]
     },
@@ -1245,137 +1363,144 @@
       },
       "group": [
         {
-          "heading": "PHỤ KIỆN ĐIỆN THOẠI",
-          "extend": [
+          "menuList": [
             {
-              "name": "Sạc dự phòng",
-              "path": "/phu-kien/sac-du-phong"
+              "heading": "PHỤ KIỆN ĐIỆN THOẠI",
+              "extend": [
+                {
+                  "name": "Sạc dự phòng",
+                  "path": "/phu-kien/sac-du-phong"
+                },
+                {
+                  "name": "Củ sạc, dây cáp",
+                  "path": "/phu-kien/cu-sac-day-cap"
+                },
+                { "name": "Thẻ nhớ - USB", "path": "/phu-kien/the-nho-usb" },
+                {
+                  "name": "Bao da - Ốp lưng",
+                  "path": "/phu-kien/bao-da-op-lung"
+                },
+                {
+                  "name": "Miếng dán màn hình",
+                  "path": "/phu-kien/dan-man-hinh"
+                }
+              ]
             },
             {
-              "name": "Củ sạc, dây cáp",
-              "path": "/phu-kien/cu-sac-day-cap"
-            },
-            { "name": "Thẻ nhớ - USB", "path": "/phu-kien/the-nho-usb" },
-            { "name": "Bao da - Ốp lưng", "path": "/phu-kien/bao-da-op-lung" },
-            {
-              "name": "Miếng dán màn hình",
-              "path": "/phu-kien/dan-man-hinh"
-            }
-          ]
-        },
-        {
-          "heading": "XẢ TỒN PHỤ KIỆN - GIÁ SỐC",
-          "extend": ""
-        },
-        {
-          "heading": "BÀN PHÍM & CHUỘT",
-          "extend": [
-            {
-              "name": "Bàn Phím",
-              "path": "/phu-kien/ban-phim"
+              "heading": "XẢ TỒN PHỤ KIỆN - GIÁ SỐC",
+              "extend": ""
             },
             {
-              "name": "Chuột",
-              "path": "/phu-kien/chuot"
-            }
-          ]
-        },
-        {
-          "heading": "CAMERA AN NINH - HÀNH TRÌNH",
-          "extend": [
-            {
-              "name": "Camera an ninh",
-              "path": "/phu-kien/camera"
+              "heading": "BÀN PHÍM & CHUỘT",
+              "extend": [
+                {
+                  "name": "Bàn Phím",
+                  "path": "/phu-kien/ban-phim"
+                },
+                {
+                  "name": "Chuột",
+                  "path": "/phu-kien/chuot"
+                }
+              ]
             },
             {
-              "name": "Camera hành trình",
-              "path": "/phu-kien/robot-may-hut-bui"
-            }
-          ]
-        },
-        {
-          "heading": "PHỤ KIỆN SMART TV",
-          "extend": [
-            {
-              "name": "Truyền hình K+",
-              "path": "/phu-kien/truyen-hinh-k+"
-            }
-          ]
-        },
-        {
-          "heading": "LINH KIỆN MÁY TÍNH",
-          "extend": [
-            {
-              "name": "Ổ cứng",
-              "path": "/phu-kien/o-cung"
+              "heading": "CAMERA AN NINH - HÀNH TRÌNH",
+              "extend": [
+                {
+                  "name": "Camera an ninh",
+                  "path": "/phu-kien/camera"
+                },
+                {
+                  "name": "Camera hành trình",
+                  "path": "/phu-kien/robot-may-hut-bui"
+                }
+              ]
             },
             {
-              "name": "Phần mềm",
-              "path": "/phu-kien/phan-mem"
+              "heading": "PHỤ KIỆN SMART TV",
+              "extend": [
+                {
+                  "name": "Truyền hình K+",
+                  "path": "/phu-kien/truyen-hinh-k+"
+                }
+              ]
             },
             {
-              "name": "RAM",
-              "path": "/phu-kien/ram"
-            }
-          ]
-        },
-        {
-          "heading": "THAY PIN, MÀN HÌNH CHÍNH HÃNG",
-          "extend": [
-            {
-              "name": "Màn hình iPhone",
-              "path": "/phu-kien/man-hinh-iphone"
+              "heading": "LINH KIỆN MÁY TÍNH",
+              "extend": [
+                {
+                  "name": "Ổ cứng",
+                  "path": "/phu-kien/o-cung"
+                },
+                {
+                  "name": "Phần mềm",
+                  "path": "/phu-kien/phan-mem"
+                },
+                {
+                  "name": "RAM",
+                  "path": "/phu-kien/ram"
+                }
+              ]
             },
             {
-              "name": "Pin iPhone",
-              "path": "/phu-kien/pin-iphone"
-            }
-          ]
-        },
-        {
-          "heading": "PHỤ KIỆN APPLE",
-          "extend": [
-            {
-              "name": "Phụ kiện chính hãng Apple",
-              "path": "/phu-kien/apple"
+              "heading": "THAY PIN, MÀN HÌNH CHÍNH HÃNG",
+              "extend": [
+                {
+                  "name": "Màn hình iPhone",
+                  "path": "/phu-kien/man-hinh-iphone"
+                },
+                {
+                  "name": "Pin iPhone",
+                  "path": "/phu-kien/pin-iphone"
+                }
+              ]
             },
             {
-              "name": "Sản phẩm Ưu đãi",
-              "path": "/phu-kien/uu-dai"
+              "heading": "PHỤ KIỆN APPLE",
+              "extend": [
+                {
+                  "name": "Phụ kiện chính hãng Apple",
+                  "path": "/phu-kien/apple"
+                },
+                {
+                  "name": "Sản phẩm Ưu đãi",
+                  "path": "/phu-kien/uu-dai"
+                },
+                {
+                  "name": "Thiết bị định vị thông minh",
+                  "path": "/phu-kien/gps"
+                }
+              ]
             },
             {
-              "name": "Thiết bị định vị thông minh",
-              "path": "/phu-kien/gps"
-            }
-          ]
-        },
-        {
-          "heading": "PHỤ KIỆN KHÁC",
-          "extend": [
-            {
-              "name": "Balo - túi xách - túi chống sốc",
-              "path": "/phu-kien/ba-lo-tui-xach"
-            }
-          ]
-        },
-        {
-          "heading": "THIẾT BỊ MẠNG",
-          "extend": [
-            {
-              "name": "Bộ kích sóng",
-              "path": "/phu-kien/bo-kich-song"
+              "heading": "PHỤ KIỆN KHÁC",
+              "extend": [
+                {
+                  "name": "Balo - túi xách - túi chống sốc",
+                  "path": "/phu-kien/ba-lo-tui-xach"
+                }
+              ]
             },
             {
-              "name": "Bộ phát Wifi di động (3G/4G)",
-              "path": "/phu-kien/bo-phat-wifi-di-dong"
-            },
-            {
-              "name": "Router/Modem",
-              "path": "/phu-kien/route-modem"
-            },
-            {
-              "name": "Thương hiệu",
-              "path": "/phu-kien/thuong-hieu"
+              "heading": "THIẾT BỊ MẠNG",
+              "extend": [
+                {
+                  "name": "Bộ kích sóng",
+                  "path": "/phu-kien/bo-kich-song"
+                },
+                {
+                  "name": "Bộ phát Wifi di động (3G/4G)",
+                  "path": "/phu-kien/bo-phat-wifi-di-dong"
+                },
+                {
+                  "name": "Router/Modem",
+                  "path": "/phu-kien/route-modem"
+                },
+                {
+                  "name": "Thương hiệu",
+                  "path": "/phu-kien/thuong-hieu"
+                }
+              ]
             }
           ]
         }
@@ -1395,24 +1520,28 @@
       },
       "group": [
         {
-          "heading": "ĐỒ CHƠI CÔNG NGHỆ",
-          "extend": [
+          "menuList": [
             {
-              "name": "Quạt cầm tay mini",
-              "path": "/do-choi-cn/quat-mini"
-            },
-            {
-              "name": "Dây đo nhịp tim",
-              "path": "/do-choi-cn/day-do-nhip-tim"
-            },
-            { "name": "Kính thực tế ảo", "path": "/do-choi-cn/var" },
-            {
-              "name": "Tay cầm chống rung",
-              "path": "/do-choi-cn/tay-cam-chong-rung"
-            },
-            {
-              "name": "Camera hành trình",
-              "path": "/do-choi-cn/camera"
+              "heading": "ĐỒ CHƠI CÔNG NGHỆ",
+              "extend": [
+                {
+                  "name": "Quạt cầm tay mini",
+                  "path": "/do-choi-cn/quat-mini"
+                },
+                {
+                  "name": "Dây đo nhịp tim",
+                  "path": "/do-choi-cn/day-do-nhip-tim"
+                },
+                { "name": "Kính thực tế ảo", "path": "/do-choi-cn/var" },
+                {
+                  "name": "Tay cầm chống rung",
+                  "path": "/do-choi-cn/tay-cam-chong-rung"
+                },
+                {
+                  "name": "Camera hành trình",
+                  "path": "/do-choi-cn/camera"
+                }
+              ]
             }
           ]
         }
@@ -1432,56 +1561,60 @@
       },
       "group": [
         {
-          "heading": "ĐỒ CHƠI CÔNG NGHỆ",
-          "extend": [
+          "menuList": [
             {
-              "name": "Điện thoại di động",
-              "path": "/may-troi-bh/dien-thoai-dd"
-            },
-            {
-              "name": "Đồng hồ thông minh",
-              "path": "/may-troi-bh/smart-watch"
-            },
-            { "name": "Máy tính bảng", "path": "/may-troi-bh/tablet" },
-            {
-              "name": "Laptop",
-              "path": "/may-troi-bh/latop"
-            },
-            {
-              "name": "Loa",
-              "path": "/may-troi-bh/sound"
-            },
-            {
-              "name": "Tai nghe",
-              "path": "/may-troi-bh/eyephone"
-            },
-            {
-              "name": "Camera",
-              "path": "/may-troi-bh/camera"
-            },
-            {
-              "name": "Củ sạc",
-              "path": "/may-troi-bh/camera-sac"
-            },
-            {
-              "name": "Dây cáp",
-              "path": "/may-troi-bh/day-cap"
-            },
-            {
-              "name": "Máy lọc không khí",
-              "path": "/may-troi-bh/may-loc-kk"
-            },
-            {
-              "name": "Phụ kiện",
-              "path": "/may-troi-bh/phu-kien"
-            },
-            {
-              "name": "Sạc dự phòng",
-              "path": "/may-troi-bh/sac-du-phong"
-            },
-            {
-              "name": "Tay cầm chống rung",
-              "path": "/may-troi-bh/tay-cam-chong-rung"
+              "heading": "ĐỒ CHƠI CÔNG NGHỆ",
+              "extend": [
+                {
+                  "name": "Điện thoại di động",
+                  "path": "/may-troi-bh/dien-thoai-dd"
+                },
+                {
+                  "name": "Đồng hồ thông minh",
+                  "path": "/may-troi-bh/smart-watch"
+                },
+                { "name": "Máy tính bảng", "path": "/may-troi-bh/tablet" },
+                {
+                  "name": "Laptop",
+                  "path": "/may-troi-bh/latop"
+                },
+                {
+                  "name": "Loa",
+                  "path": "/may-troi-bh/sound"
+                },
+                {
+                  "name": "Tai nghe",
+                  "path": "/may-troi-bh/eyephone"
+                },
+                {
+                  "name": "Camera",
+                  "path": "/may-troi-bh/camera"
+                },
+                {
+                  "name": "Củ sạc",
+                  "path": "/may-troi-bh/camera-sac"
+                },
+                {
+                  "name": "Dây cáp",
+                  "path": "/may-troi-bh/day-cap"
+                },
+                {
+                  "name": "Máy lọc không khí",
+                  "path": "/may-troi-bh/may-loc-kk"
+                },
+                {
+                  "name": "Phụ kiện",
+                  "path": "/may-troi-bh/phu-kien"
+                },
+                {
+                  "name": "Sạc dự phòng",
+                  "path": "/may-troi-bh/sac-du-phong"
+                },
+                {
+                  "name": "Tay cầm chống rung",
+                  "path": "/may-troi-bh/tay-cam-chong-rung"
+                }
+              ]
             }
           ]
         }
@@ -1501,65 +1634,69 @@
       },
       "group": [
         {
-          "heading": "ANDROID",
-          "extend": [
+          "menuList": [
             {
-              "name": "Pin",
-              "path": "/sua-chua/pin"
+              "heading": "ANDROID",
+              "extend": [
+                {
+                  "name": "Pin",
+                  "path": "/sua-chua/pin"
+                },
+                {
+                  "name": "Camera",
+                  "path": "/sua-chua/camera"
+                },
+                { "name": "Màn hình", "path": "/sua-chua/man-hinh" },
+                {
+                  "name": "Vỏ và mặt lưng",
+                  "path": "/sua-chua/vo-mat-lung"
+                }
+              ]
             },
             {
-              "name": "Camera",
-              "path": "/sua-chua/camera"
+              "heading": "APPLE IPHONE",
+              "extend": [
+                {
+                  "name": "Camera Trước",
+                  "path": "/sua-chua/cam-truoc"
+                },
+                {
+                  "name": "Cáp phím âm lượng - Cáp phím nguồn",
+                  "path": "/sua-chua/phim-am-luong"
+                },
+                { "name": "Loa Trong - Loa Ngoài", "path": "/sua-chua/sound" },
+                {
+                  "name": "Vỏ - Kính Lưng",
+                  "path": "/sua-chua/vo-kinh-lung"
+                },
+                {
+                  "name": "Camera Sau",
+                  "path": "/sua-chua/cam-sau"
+                },
+                {
+                  "name": "Màn hình",
+                  "path": "/sua-chua/man-hinh"
+                },
+                {
+                  "name": "Cáp bo sạc IPhone",
+                  "path": "/sua-chua/cap-va-bo-sac"
+                }
+              ]
             },
-            { "name": "Màn hình", "path": "/sua-chua/man-hinh" },
             {
-              "name": "Vỏ và mặt lưng",
-              "path": "/sua-chua/vo-mat-lung"
+              "heading": "APPLE IPAD",
+              "extend": [
+                {
+                  "name": "Pin",
+                  "path": "/sua-chua/pin"
+                },
+                {
+                  "name": "Cảm ứng",
+                  "path": "/sua-chua/cam-ung"
+                },
+                { "name": "Màn hình", "path": "/sua-chua/man=hinh" }
+              ]
             }
-          ]
-        },
-        {
-          "heading": "APPLE IPHONE",
-          "extend": [
-            {
-              "name": "Camera Trước",
-              "path": "/sua-chua/cam-truoc"
-            },
-            {
-              "name": "Cáp phím âm lượng - Cáp phím nguồn",
-              "path": "/sua-chua/phim-am-luong"
-            },
-            { "name": "Loa Trong - Loa Ngoài", "path": "/sua-chua/sound" },
-            {
-              "name": "Vỏ - Kính Lưng",
-              "path": "/sua-chua/vo-kinh-lung"
-            },
-            {
-              "name": "Camera Sau",
-              "path": "/sua-chua/cam-sau"
-            },
-            {
-              "name": "Màn hình",
-              "path": "/sua-chua/man-hinh"
-            },
-            {
-              "name": "Cáp bo sạc IPhone",
-              "path": "/sua-chua/cap-va-bo-sac"
-            }
-          ]
-        },
-        {
-          "heading": "APPLE IPAD",
-          "extend": [
-            {
-              "name": "Pin",
-              "path": "/sua-chua/pin"
-            },
-            {
-              "name": "Cảm ứng",
-              "path": "/sua-chua/cam-ung"
-            },
-            { "name": "Màn hình", "path": "/sua-chua/man=hinh" }
           ]
         }
       ]
@@ -1604,28 +1741,40 @@
       },
       "group": [
         {
-          "heading": "Ưu đãi hot",
-          "extend": [
-            { "name": "Combo ưu đãi samsung", "path": "/uu-dai/samsung" },
-            { "name": "Khuyến mại Apple", "path": "/uu-dai/Apple" },
-            { "name": "Khuyến mại Energizer", "path": "/uu-dai/Energizer" },
-            { "name": "Khuyến mại Huawei", "path": "/uu-dai/Huawei" },
-            { "name": "Khuyến mại LG", "path": "/uu-dai/LG" },
-            { "name": "Khuyến mại Sony", "path": "/uu-dai/Sony" },
-            { "name": "Nokia Khuyến mại", "path": "/uu-dai/Nokia" },
-            { "name": "Sản phẩm độc quyền", "path": "/uu-dai/sp-doc-quyen" },
-            { "name": "Sản phẩm Huawei mới", "path": "/uu-dai/Huawei" },
-            { "name": "Sản phẩm mới Apple", "path": "/uu-dai/Apple" },
-            { "name": "Ưu cái các Sản phẩm Oaxis", "path": "/uu-dai/Oaxis" },
+          "menuList": [
             {
-              "name": "Ưu đãi thiết bị mạng, camera an ninh",
-              "path": "/uu-dai/thiet-bi-mang-camera"
+              "heading": "Ưu đãi hot",
+              "extend": [
+                { "name": "Combo ưu đãi samsung", "path": "/uu-dai/samsung" },
+                { "name": "Khuyến mại Apple", "path": "/uu-dai/Apple" },
+                { "name": "Khuyến mại Energizer", "path": "/uu-dai/Energizer" },
+                { "name": "Khuyến mại Huawei", "path": "/uu-dai/Huawei" },
+                { "name": "Khuyến mại LG", "path": "/uu-dai/LG" },
+                { "name": "Khuyến mại Sony", "path": "/uu-dai/Sony" },
+                { "name": "Nokia Khuyến mại", "path": "/uu-dai/Nokia" },
+                {
+                  "name": "Sản phẩm độc quyền",
+                  "path": "/uu-dai/sp-doc-quyen"
+                },
+                { "name": "Sản phẩm Huawei mới", "path": "/uu-dai/Huawei" },
+                { "name": "Sản phẩm mới Apple", "path": "/uu-dai/Apple" },
+                {
+                  "name": "Ưu cái các Sản phẩm Oaxis",
+                  "path": "/uu-dai/Oaxis"
+                },
+                {
+                  "name": "Ưu đãi thiết bị mạng, camera an ninh",
+                  "path": "/uu-dai/thiet-bi-mang-camera"
+                }
+              ]
             }
           ]
         },
         {
-          "img": "https://hoanghamobile.com/Uploads/2023/05/31/top-menu-uu-dai.png",
-          "path": "https://hoanghamobile.com/bo-phat-wifi-thiet-bi-mang-truyen-hinh-boxtv/goi-summer-pack-1-thang"
+          "menuAds": {
+            "img": "https://hoanghamobile.com/Uploads/2023/05/31/top-menu-uu-dai.png",
+            "path": "https://hoanghamobile.com/bo-phat-wifi-thiet-bi-mang-truyen-hinh-boxtv/goi-summer-pack-1-thang"
+          }
         }
       ]
     }

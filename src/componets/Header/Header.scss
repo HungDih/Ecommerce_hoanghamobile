@@ -230,6 +230,8 @@
           justify-content: left;
 
           .group-item {
+            margin: 12px 20px 20px 20px;
+
             h4 {
               a {
                 text-decoration: none;
@@ -239,7 +241,6 @@
                 white-space: nowrap;
               }
             }
-            margin: 0 40px 20px 20px;
 
             .menu-list {
               list-style: none;
@@ -256,6 +257,19 @@
               }
             }
           }
+
+          .ads {
+            .menu-ads {
+              padding-top: 20px;
+              margin: 0 20px 20px 0;
+            }
+          }
+
+          .content-list {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+          }
         }
 
         a {
@@ -264,6 +278,128 @@
 
           &:hover {
             color: #009981;
+          }
+        }
+      }
+
+      &:first-child {
+        .group-item {
+          &:first-child {
+            .menu-list {
+              display: grid;
+              grid-template-columns: auto auto auto;
+              grid-column-gap: 90px;
+            }
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        .group-item {
+          &:first-child {
+            .menu-list {
+              display: grid;
+              grid-template-columns: auto auto auto auto;
+              grid-column-gap: 80px;
+            }
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        .group-item {
+          &:first-child {
+            .menu-list {
+              display: grid;
+              grid-template-columns: auto auto auto;
+              grid-column-gap: 100px;
+              margin-right: 40px;
+            }
+          }
+        }
+      }
+
+      &:nth-child(5) {
+        .group-item {
+          &:first-child {
+            .menu-list {
+              display: grid;
+              grid-template-columns: auto auto;
+              grid-column-gap: 24px;
+            }
+          }
+        }
+      }
+
+      &:nth-child(7) {
+        .group-item {
+          width: 100%;
+          &:first-child {
+            .menu-list {
+              display: grid;
+              grid-template-columns: auto auto auto;
+              grid-column-gap: 24px;
+            }
+          }
+        }
+      }
+
+      &:nth-child(8) {
+        .group-item {
+          &:first-child {
+            .menu-list {
+              display: grid;
+              grid-template-columns: auto auto;
+              grid-column-gap: 40px;
+            }
+          }
+          &:last-child {
+            .menu-list {
+              display: grid;
+              grid-template-columns: auto auto auto;
+              grid-column-gap: 40px;
+            }
+          }
+        }
+      }
+
+      &:nth-child(10) {
+        .content-list {
+          width: 100% !important;
+          .group-item {
+            width: 16.66667%;
+          }
+        }
+      }
+
+      &:nth-child(12) {
+        .content-list {
+          width: 100% !important;
+          display: block !important;
+          .group-item {
+            &:first-child {
+              .menu-list {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-column-gap: 40px;
+              }
+            }
+          }
+        }
+      }
+      &:nth-child(13) {
+        .content-list {
+          width: 100% !important;
+          justify-content:space-between ;
+          .group-item {
+            &:first-child,
+            &:nth-child(2) {
+              .menu-list {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-column-gap: 40px;
+              }
+            }
           }
         }
       }
@@ -299,31 +435,3 @@
   }
 }
 
-
-.products {
-  .nav-item {
-    &:first-child {
-      .group-item {
-        &:first-child {
-          .menu-list {
-            display: grid;
-            grid-template-columns: auto auto auto;
-            grid-column-gap: 90px;
-          }
-        }
-      }
-    }
-
-    &:nth-child(2) {
-      .group-item {
-        &:first-child {
-          .menu-list {
-            display: grid;
-            grid-template-columns: auto auto auto auto;
-            grid-column-gap: 90px;
-          }
-        }
-      }
-    }
-  }
-}
