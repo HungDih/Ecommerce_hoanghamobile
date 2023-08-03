@@ -65,8 +65,8 @@ function Mobile() {
   //Handle filterPrice
   const getFilterPrice = async () => {
     let respone = await fetchFilterPrice();
-    if (respone && respone.data.ranges) {
-      setListFilterPrice(respone.data.ranges);
+    if (respone && respone.data) {
+      setListFilterPrice(respone.data);
     }
   };
 
@@ -179,6 +179,7 @@ function Mobile() {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
 

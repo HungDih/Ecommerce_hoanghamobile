@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require("cors");
 const Product = require("./models/productModels");
 const Name = require("./models/filterNameModels");
 const Carousel = require("./models/carouselModels");
@@ -12,6 +13,7 @@ const app = express();
 
 //Midderware
 app.use(express.json());
+app.use(cors());
 
 //Routes
 app.get("/", (req, res) => {
@@ -29,6 +31,22 @@ app.get("/products", async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 });
+
+app.get("/products", (req, res) => {
+  Product.find()
+    .sort({ order: 1 })
+    .exec((err, products) => {
+      if (err) {
+        console.log("Lỗi khi truy vấn dữ liệu:", err);
+        res.status(500).json({ error: "Lỗi khi truy vấn dữ liệu" });
+      } else {
+        console.log("Danh sách sản phẩm theo thứ tự:");
+        console.log(products);
+        res.json(products);
+      }
+    });
+});
+
 //Create:
 app.post("/products", async (req, res) => {
   try {
@@ -110,7 +128,7 @@ app.post("/prices", async (req, res) => {
 //Getdata
 app.get("/catelogys", async (req, res) => {
   try {
-    const catelogy = await Catelogy.find({});
+    const catelogy = await Catelogy.find({}).sort({ id: 1 });
     res.status(200).json(catelogy);
   } catch (error) {
     console.log(error);
@@ -150,30 +168,27 @@ app.post("/navtitles", async (req, res) => {
   }
 });
 
-
 // Footers
 //Getdata
 app.get("/footers", async (req, res) => {
-    try {
-      const footer = await Footer.find({});
-      res.status(200).json(footer);
-    } catch (error) {
-      console.log(error);
-      res.status(500).json({ message: error.message });
-    }
-  });
-  //Create:
-  app.post("/footers", async (req, res) => {
-    try {
-      const footer = await Footer.create(req.body);
-      res.status(200).json(footer);
-    } catch (error) {
-      console.log(error.message);
-      res.status(500).json({ message: error.message });
-    }
-  });
-
-
+  try {
+    const footer = await Footer.find({});
+    res.status(200).json(footer);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ message: error.message });
+  }
+});
+//Create:
+app.post("/footers", async (req, res) => {
+  try {
+    const footer = await Footer.create(req.body);
+    res.status(200).json(footer);
+  } catch (error) {
+    console.log(error.message);
+    res.status(500).json({ message: error.message });
+  }
+});
 
 mongoose
   .connect(

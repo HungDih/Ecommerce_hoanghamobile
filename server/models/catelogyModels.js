@@ -1,51 +1,45 @@
 const mongoose = require("mongoose");
 
-// Định nghĩa schema cho một mục "menuExtend"
-const menuExtendSchema = mongoose.Schema({
-  name: { type: String, required: true },
-  path: { type: String, required: true },
-  logo: { type: String },
+// Định nghĩa schema cho trường "icon"
+const iconSchema = mongoose.Schema({
+  type: { type: String },
+  key: { type: String },
+  ref: { type: String },
+  props: { type: mongoose.Schema.Types.Mixed },
+  _owner: { type: String },
+  _store: { type: mongoose.Schema.Types.Mixed },
 });
 
-// Định nghĩa schema cho mục "menuList" có chứa các mục "menuExtend"
+// Định nghĩa schema cho một phần "menuList" trong "group"
 const menuListSchema = mongoose.Schema({
-  heading: { type: String },
-  extend: [menuExtendSchema],
+  heading: { type: String, default: "" },
+  extend: [
+    {
+      name: { type: String, default: "" },
+      path: { type: String, default: "" },
+    },
+  ],
 });
 
-// Định nghĩa schema cho mục "menuAds"
-const menuAdsSchema = mongoose.Schema({
-  img: { type: String, required: true },
-  path: { type: String, required: true },
-});
-
-// Định nghĩa schema cho mục "group" chứa các mục "menuList" và "menuAds"
+// Định nghĩa schema cho phần "group"
 const groupSchema = mongoose.Schema({
   menuList: [menuListSchema],
-  menuAds: menuAdsSchema,
+  menuAds: {
+    img: { type: String },
+    path: { type: String },
+  },
 });
 
-// Định nghĩa schema cho mục "catelogy" chứa các mục "group"
+// Định nghĩa schema cho toàn bộ document
 const catelogySchema = mongoose.Schema({
   id: { type: Number, required: true },
   title: { type: String, required: true },
   path: { type: String, required: true },
-  icon: {
-    type: {
-      type: String,
-      required: true,
-    },
-    key: String,
-    ref: String,
-    props: {
-      className: String,
-    },
-    _owner: String,
-    _store: {},
-  },
+  icon: iconSchema,
   group: [groupSchema],
 });
 
+// Tạo model từ schema
 const Catelogy = mongoose.model("Catelogy", catelogySchema);
 
 module.exports = Catelogy;

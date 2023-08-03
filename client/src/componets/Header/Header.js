@@ -97,7 +97,7 @@ function Header() {
         <ul className="products">
           {catelogy &&
             catelogy.map((item, index) => {
-              if (index === item.id) {
+              // if (index === item.id) {
                 return (
                   <li className="nav-item" key={index}>
                     <a href={item.path}>
@@ -111,29 +111,35 @@ function Header() {
                             {item.group.map((itemG, indexG) => {
                               return (
                                 itemG.menuList &&
+                                // itemG.menuList.length > 0 &&
                                 itemG.menuList.map((itemList, indexList) => {
                                   return (
-                                    <div className="group-item" key={indexList}>
-                                      <h4>
-                                        <a href={item.path}>
-                                          {itemList.heading}
-                                        </a>
-                                      </h4>
-                                      <ul className="menu-list">
-                                        {itemList.extend &&
-                                          itemList.extend.map(
-                                            (itemEx, indexEx) => {
-                                              return (
-                                                <li key={indexEx}>
-                                                  <a href={itemEx.path}>
-                                                    {itemEx.name}
-                                                  </a>
-                                                </li>
-                                              );
-                                            }
-                                          )}
-                                      </ul>
-                                    </div>
+                                    itemList && (
+                                      <div
+                                        className="group-item"
+                                        key={indexList}
+                                      >
+                                        <h4>
+                                          <a href={item.path}>
+                                            {itemList.heading}
+                                          </a>
+                                        </h4>
+                                        <ul className="menu-list">
+                                          {itemList.extend &&
+                                            itemList.extend.map(
+                                              (itemEx, indexEx) => {
+                                                return (
+                                                  <li key={indexEx}>
+                                                    <a href={itemEx.path}>
+                                                      {itemEx.name}
+                                                    </a>
+                                                  </li>
+                                                );
+                                              }
+                                            )}
+                                        </ul>
+                                      </div>
+                                    )
                                   );
                                 })
                               );
@@ -161,7 +167,9 @@ function Header() {
                     )}
                   </li>
                 );
-              }
+
+              // }
+
             })}
         </ul>
       </div>
