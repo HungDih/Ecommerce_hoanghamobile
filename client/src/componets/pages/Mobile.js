@@ -87,6 +87,7 @@ function Mobile() {
 
   return (
     <div className="content">
+      
       <div className="top-ads">
         <a
           href="https://hoanghamobile.com/dien-thoai-di-dong/xiaomi/redmi-note-12-series?source=Chuyenmuc"
@@ -99,6 +100,7 @@ function Mobile() {
           />
         </a>
       </div>
+
       <div className="brand-carousel">
         <button type="button" role="presentation" className="btn-directional">
           <i className="fa-solid fa-caret-left"></i>
@@ -120,6 +122,7 @@ function Mobile() {
           <i className="fa-solid fa-caret-right"></i>
         </button>
       </div>
+
       <div className="products">
         <div className="nav-breadcrums">
           <i className="fa-solid fa-house"></i>
@@ -279,6 +282,7 @@ function Mobile() {
           </div>
         )}
       </div>
+
     </div>
   );
 }

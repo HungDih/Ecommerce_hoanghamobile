@@ -13,9 +13,10 @@
     .link-content {
       width: 16.666667%;
       h4 {
+        font-weight: bold;
         font-size: 15px;
         color: #ddd;
-        margin: 10px 0 10px 0;
+        margin: 10px 0 7px 0;
         &:hover {
           color: #fff;
         }
@@ -25,9 +26,8 @@
         margin: 0;
         padding: 0;
         li {
-          margin-bottom: 5px;
+          margin-bottom: 3px;
           display: flex;
-
           a {
             text-decoration: none;
             font-size: 13px;
@@ -42,6 +42,11 @@
         }
       }
 
+      a[target="_BCT"] {
+        img {
+          margin-top: 16px;
+        }
+      }
       &:nth-child(4) {
         li {
           margin: 0;
@@ -70,7 +75,7 @@
       padding-top: 30px;
       text-align: center;
       p {
-        margin: 0 0 5px 0;
+        margin: 0 0 4px 0;
         font-size: 9pt;
       }
     }
@@ -84,7 +89,7 @@
       bottom: 24%;
 
       .sticker {
-        margin-bottom: 8px;
+        margin-bottom: 10px;
       }
 
       .zalo {
@@ -99,9 +104,8 @@
       border-radius: 30px;
       display: inline-block;
       position: fixed;
-      padding: 2px;
       top: 45%;
-      left: 10%;
+      left: 175px;
 
       ul {
         margin: 0;
@@ -109,7 +113,7 @@
 
         li {
           list-style: none;
-          margin-bottom: 4px;
+          margin-bottom: 6px;
 
           &:first-child {
             a {
@@ -119,6 +123,8 @@
           }
 
           &:last-child {
+            margin-bottom: 0px;
+
             a {
               border: 2px solid #000;
               color: #000;
@@ -141,8 +147,8 @@
 
           a {
             display: block;
-            width: 40px;
-            height: 41px;
+            width: 43px;
+            height: 43px;
             text-align: center;
             font-size: 24px;
             padding: 1px 0 5px 0;
@@ -173,9 +179,9 @@
       position: absolute;
       content: "";
       right: 12px;
-      top: 4px;
-      border-width: 8px 9px;
-      border-bottom: 16px;
+      top: 3px;
+      border-width: 11px 8px;
+      border-bottom: 14px;
       border-style: solid;
       border-color: transparent transparent #fff transparent;
     }

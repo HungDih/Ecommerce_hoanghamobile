@@ -1,6 +1,6 @@
 .content {
   width: 1200px;
-  margin: 0 auto;
+  margin: 10px auto 0 auto;
 
   .brand-carousel {
     padding: 10px 0;
@@ -188,6 +188,9 @@
           a {
             text-decoration: none;
             color: #00483d;
+            img {
+              width: 100%;
+            }
           }
         }
 

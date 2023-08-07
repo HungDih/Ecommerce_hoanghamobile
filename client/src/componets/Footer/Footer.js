@@ -70,7 +70,7 @@ function Footer() {
                       );
                     } else {
                       return (
-                        <a href={itemE.path} target="_blank" key={indexE}>
+                        <a href={itemE.path} target="_BCT" key={indexE}>
                           <img src={itemE.src} />
                         </a>
                       );

@@ -21,10 +21,11 @@
 }
 
 .heading {
-  padding: 21px 0;
+  padding: 16.84px 0;
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  align-items: center;
   .top-logo {
     padding-right: 10px;
   }
@@ -36,15 +37,17 @@
     box-shadow: 0 4px 6px #ccc;
     display: flex;
     position: relative;
-    height: 40px;
+    height: 39px;
     flex-grow: 1;
+    margin-left: 20px;
+    font-size: 13px;
 
     input {
       border: none;
       outline: none;
       padding: 7px 0;
       width: 100%;
-      font-weight: bold;
+      font-weight: 700;
       &::placeholder {
         font-size: 14px;
       }
@@ -71,14 +74,15 @@
     display: flex;
     vertical-align: top;
     padding-left: 25px;
+    align-items: center;
 
     .item-check-order {
       a {
-        width: 130px;
+        width: 126px;
         display: flex;
         background: #00483e;
         border-radius: 10px;
-        padding: 10px 12px;
+        padding: 4px 6px;
         box-shadow: 0 4px 6px #ccc;
         color: #fff;
         border: none;
@@ -93,7 +97,7 @@
         }
 
         .text {
-          margin-left: 54px;
+          margin-left: 44px;
         }
 
         &:hover {
@@ -109,6 +113,7 @@
     font-size: 38px;
     a {
       i {
+        font-size: 34px;
         color: #00483e;
         &:hover {
           color: #009981;
@@ -164,7 +169,7 @@
     max-width: 1200px;
 
     .nav-item {
-      margin: 8px 14px 4px 14px;
+      margin: 10px 14px 4px 14px;
       display: inline-flex;
 
       &:hover {
@@ -390,7 +395,7 @@
       &:nth-child(13) {
         .content-list {
           width: 100% !important;
-          justify-content:space-between ;
+          justify-content: space-between;
           .group-item {
             &:first-child,
             &:nth-child(2) {
@@ -434,4 +439,3 @@
     }
   }
 }
-
