@@ -94,7 +94,7 @@ function Mobile() {
           target="_top"
         >
           <img
-            src="https://cdn.hoanghamobile.com/i/home/Uploads/2023/07/04/1200x200_638240586236126285.jpg"
+            src="https://cdn.hoanghamobile.com/i/home/Uploads/2023/07/31/note-12.png"
             className="img-ads"
             alt="Top Ad"
           />
@@ -127,10 +127,10 @@ function Mobile() {
         <div className="nav-breadcrums">
           <i className="fa-solid fa-house"></i>
           <a href="/">
-            <strong>Trang chủ › </strong>
+            <strong>Trang chủ  ›  </strong>
           </a>
           <a href="/dien-thoai">
-            <span>Điện thoại</span>
+            <span> Điện thoại</span>
           </a>
         </div>
 

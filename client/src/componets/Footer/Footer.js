@@ -106,7 +106,7 @@ function Footer() {
             những chiếc điện thoại di động chính hãng và giá rẻ thì Hoàng Hà
             cũng có rất nhiều sự lựa chọn cho bạn. Đặc biệt là khi bạn có thể
             mua điện thoại với mức giá vô cùng phải chăng khi tham gia gói mua
-            hàng trả góp tại Hoàng Hà. Hoàng Hà Mobile - Siêu thị điện thoại di
+            hàng trả góp tại Hoàng Hà. Hoàng Hà Mobile – Siêu thị điện thoại di
             động giá rẻ nhất, miễn phí vận chuyển toàn quốc, bảo hành 12 tháng,
             trả góp 0%.
           </p>
