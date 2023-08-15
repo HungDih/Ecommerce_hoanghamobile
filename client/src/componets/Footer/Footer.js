@@ -112,39 +112,39 @@ function Footer() {
           </p>
         </div>
 
-        <div class="corevalue">
-          <div class="item-value">
-            <span class="icon-value">
-              <i class="fa-regular fa-circle-check"></i>
+        <div className="corevalue">
+          <div className="item-value">
+            <span className="icon-value">
+              <i className="fa-regular fa-circle-check"></i>
             </span>
-            <div class="text-value">
+            <div className="text-value">
               <span>Sản phẩm</span>
               <strong>CHÍNH HÃNG</strong>
             </div>
           </div>
-          <div class="item-value">
-            <span class="icon-value">
-              <i class="fa-solid fa-cart-flatbed"></i>
+          <div className="item-value">
+            <span className="icon-value">
+              <i className="fa-solid fa-cart-flatbed"></i>
             </span>
-            <div class="text-value">
+            <div className="text-value">
               <span>Miễn phí vận chuyển</span>
               <strong>TOÀN QUỐC</strong>
             </div>
           </div>
-          <div class="item-value">
-            <span class="icon-value">
-              <i class="fa-solid fa-headphones-simple"></i>
+          <div className="item-value">
+            <span className="icon-value">
+              <i className="fa-solid fa-headphones-simple"></i>
             </span>
-            <div class="text-value">
+            <div className="text-value">
               <span>Hotline hỗ trợ</span>
               <strong>1900.2091</strong>
             </div>
           </div>
-          <div class="item-value">
-            <span class="icon-value">
-              <i class="fa-solid fa-repeat"></i>
+          <div className="item-value">
+            <span className="icon-value">
+              <i className="fa-solid fa-repeat"></i>
             </span>
-            <div class="text-value">
+            <div className="text-value">
               <span>Thủ tục đổi trả</span>
               <strong>DỄ DÀNG</strong>
             </div>
