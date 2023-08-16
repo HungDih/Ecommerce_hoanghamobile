@@ -18,6 +18,8 @@ function Mobile() {
 
   const productLoaded = listProducts.slice(0, numOfProduct);
 
+// console.log(productLoaded);
+
   const handleLoadMore = () => {
     if (listProducts.length == productLoaded.length) {
       setIsAllLoaded(true);
