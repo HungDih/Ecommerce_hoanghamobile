@@ -7,6 +7,23 @@ function Header() {
   const [topNav, setTopNav] = useState([]);
   const [catelogy, setCatelogy] = useState([]);
 
+  // Scroll to fixed
+  const [fixed, setFixed] = useState(false);
+  useEffect(() => {
+    const scrollTrigger = 120;
+    const handleScroll = () => {
+      if (window.scrollY > scrollTrigger) {
+        setFixed(true);
+      } else {
+        setFixed(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   useEffect(() => {
     getTopNav();
     getCatelogy();
@@ -93,11 +110,10 @@ function Header() {
         </div>
       </div>
 
-      <div className="bot-nav">
+      <div className={`bot-nav ${fixed ? "fixed" : ""}`}>
         <ul className="products">
           {catelogy &&
             catelogy.map((item, index) => {
-              // if (index === item.id) {
               return (
                 <li className="nav-item" key={index}>
                   <a href={item.path}>
@@ -111,7 +127,6 @@ function Header() {
                           {item.group.map((itemG, indexG) => {
                             return (
                               itemG.menuList &&
-                              // itemG.menuList.length > 0 &&
                               itemG.menuList.map((itemList, indexList) => {
                                 return (
                                   itemList && (

@@ -129,10 +129,10 @@ function Mobile() {
         <div className="nav-breadcrums">
           <i className="fa-solid fa-house"></i>
           <a href="/">
-            <strong>Trang chủ  ›  </strong>
+            <strong> Trang chủ &gt;</strong>
           </a>
           <a href="/dien-thoai">
-            <span> Điện thoại</span>
+            <span>Điện thoại</span>
           </a>
         </div>
 
